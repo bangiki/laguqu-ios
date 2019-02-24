@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		805DB77F2222ACB900C60348 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB77D2222ACB900C60348 /* LoginViewController.swift */; };
 		805DB7802222ACB900C60348 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805DB77E2222ACB900C60348 /* LoginViewController.xib */; };
+		805DB78E2222BA5A00C60348 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7842222BA5A00C60348 /* Poppins-ExtraLight.ttf */; };
+		805DB78F2222BA5A00C60348 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7852222BA5A00C60348 /* Poppins-Light.ttf */; };
+		805DB7902222BA5A00C60348 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7862222BA5A00C60348 /* Poppins-Medium.ttf */; };
+		805DB7912222BA5A00C60348 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7872222BA5A00C60348 /* Poppins-ExtraBold.ttf */; };
+		805DB7922222BA5A00C60348 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7882222BA5A00C60348 /* OFL.txt */; };
+		805DB7932222BA5A00C60348 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7892222BA5A00C60348 /* Poppins-Regular.ttf */; };
+		805DB7942222BA5A00C60348 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 805DB78A2222BA5A00C60348 /* Poppins-Bold.ttf */; };
+		805DB7952222BA5A00C60348 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 805DB78B2222BA5A00C60348 /* Poppins-Black.ttf */; };
+		805DB7962222BA5A00C60348 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 805DB78C2222BA5A00C60348 /* Poppins-Thin.ttf */; };
+		805DB7972222BA5A00C60348 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 805DB78D2222BA5A00C60348 /* Poppins-SemiBold.ttf */; };
 		80E1BD4722226FAA00516017 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BD4622226FAA00516017 /* AppDelegate.swift */; };
 		80E1BD4F22226FAA00516017 /* laguqu_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BD4D22226FAA00516017 /* laguqu_ios.xcdatamodeld */; };
 		80E1BD5122226FAC00516017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E1BD5022226FAC00516017 /* Assets.xcassets */; };
@@ -138,6 +148,16 @@
 /* Begin PBXFileReference section */
 		805DB77D2222ACB900C60348 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		805DB77E2222ACB900C60348 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		805DB7842222BA5A00C60348 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		805DB7852222BA5A00C60348 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		805DB7862222BA5A00C60348 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		805DB7872222BA5A00C60348 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		805DB7882222BA5A00C60348 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		805DB7892222BA5A00C60348 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		805DB78A2222BA5A00C60348 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		805DB78B2222BA5A00C60348 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		805DB78C2222BA5A00C60348 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		805DB78D2222BA5A00C60348 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		80E1BD4322226FAA00516017 /* laguqu-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "laguqu-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E1BD4622226FAA00516017 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80E1BD4E22226FAA00516017 /* laguqu_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = laguqu_ios.xcdatamodel; sourceTree = "<group>"; };
@@ -383,6 +403,39 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		805DB7812222BA2100C60348 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7822222BA5A00C60348 /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		805DB7822222BA5A00C60348 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7832222BA5A00C60348 /* Poppins */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		805DB7832222BA5A00C60348 /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7842222BA5A00C60348 /* Poppins-ExtraLight.ttf */,
+				805DB7852222BA5A00C60348 /* Poppins-Light.ttf */,
+				805DB7862222BA5A00C60348 /* Poppins-Medium.ttf */,
+				805DB7872222BA5A00C60348 /* Poppins-ExtraBold.ttf */,
+				805DB7882222BA5A00C60348 /* OFL.txt */,
+				805DB7892222BA5A00C60348 /* Poppins-Regular.ttf */,
+				805DB78A2222BA5A00C60348 /* Poppins-Bold.ttf */,
+				805DB78B2222BA5A00C60348 /* Poppins-Black.ttf */,
+				805DB78C2222BA5A00C60348 /* Poppins-Thin.ttf */,
+				805DB78D2222BA5A00C60348 /* Poppins-SemiBold.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
 		80E1BD3A22226FAA00516017 = {
 			isa = PBXGroup;
 			children = (
@@ -454,6 +507,7 @@
 		80E1BD8D2222760F00516017 /* Domainless */ = {
 			isa = PBXGroup;
 			children = (
+				805DB7812222BA2100C60348 /* Resources */,
 				80E1BE9A22227A4400516017 /* Utils */,
 				80E1BD95222278F700516017 /* Library */,
 				80E1BD8F2222761400516017 /* ApplicationEntry */,
@@ -822,9 +876,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				805DB7972222BA5A00C60348 /* Poppins-SemiBold.ttf in Resources */,
+				805DB7922222BA5A00C60348 /* OFL.txt in Resources */,
+				805DB7962222BA5A00C60348 /* Poppins-Thin.ttf in Resources */,
+				805DB78F2222BA5A00C60348 /* Poppins-Light.ttf in Resources */,
+				805DB7912222BA5A00C60348 /* Poppins-ExtraBold.ttf in Resources */,
+				805DB7952222BA5A00C60348 /* Poppins-Black.ttf in Resources */,
+				805DB78E2222BA5A00C60348 /* Poppins-ExtraLight.ttf in Resources */,
 				805DB7802222ACB900C60348 /* LoginViewController.xib in Resources */,
 				80E1BD5422226FAC00516017 /* LaunchScreen.storyboard in Resources */,
 				80E1BD942222778900516017 /* SplashScreenViewController.xib in Resources */,
+				805DB7942222BA5A00C60348 /* Poppins-Bold.ttf in Resources */,
+				805DB7902222BA5A00C60348 /* Poppins-Medium.ttf in Resources */,
+				805DB7932222BA5A00C60348 /* Poppins-Regular.ttf in Resources */,
 				80E1BD5122226FAC00516017 /* Assets.xcassets in Resources */,
 				80E1BE99222278F700516017 /* Info.plist in Resources */,
 			);

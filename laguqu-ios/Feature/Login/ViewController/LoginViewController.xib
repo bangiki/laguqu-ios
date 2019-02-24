@@ -9,9 +9,15 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="laguqu_ios" customModuleProvider="target">
             <connections>
+                <outlet property="scrollView" destination="oZE-zO-QQu" id="xfp-dv-Gi1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,19 +26,84 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpM-Oy-p6w">
-                    <rect key="frame" x="166.5" y="323" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZE-zO-QQu">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFH-Jk-AD4">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_login" translatesAutoresizingMaskIntoConstraints="NO" id="ZTB-5M-pyQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRA-vc-NbT" customClass="UIControl">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_login" translatesAutoresizingMaskIntoConstraints="NO" id="JGM-bG-OK1">
+                                            <rect key="frame" x="57" y="240" width="261" height="98"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="98" id="nQH-nJ-YLr"/>
+                                                <constraint firstAttribute="width" constant="261" id="tN0-dc-bPn"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find your lyrics and create your event." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6B-N3-dE5">
+                                            <rect key="frame" x="70" y="408" width="235" height="53.5"/>
+                                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins SemiBold" pointSize="19"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhb-In-zhD">
+                                            <rect key="frame" x="58.5" y="541.5" width="258" height="50"/>
+                                            <state key="normal" backgroundImage="btn_login_fb"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="T6B-N3-dE5" firstAttribute="leading" secondItem="fRA-vc-NbT" secondAttribute="leading" constant="70" id="5C6-yB-DrC"/>
+                                        <constraint firstItem="JGM-bG-OK1" firstAttribute="centerX" secondItem="fRA-vc-NbT" secondAttribute="centerX" id="9iM-rk-aNJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="T6B-N3-dE5" secondAttribute="trailing" constant="70" id="PAV-et-RGN"/>
+                                        <constraint firstItem="JGM-bG-OK1" firstAttribute="top" secondItem="fRA-vc-NbT" secondAttribute="top" constant="240" id="Sgv-Ub-hkJ"/>
+                                        <constraint firstItem="T6B-N3-dE5" firstAttribute="top" secondItem="JGM-bG-OK1" secondAttribute="bottom" constant="70" id="kDi-oY-5rt"/>
+                                        <constraint firstItem="bhb-In-zhD" firstAttribute="centerX" secondItem="fRA-vc-NbT" secondAttribute="centerX" id="slu-ug-hgL"/>
+                                        <constraint firstItem="bhb-In-zhD" firstAttribute="top" secondItem="T6B-N3-dE5" secondAttribute="bottom" constant="80" id="yB8-Ye-Kza"/>
+                                        <constraint firstAttribute="bottom" secondItem="bhb-In-zhD" secondAttribute="bottom" constant="75.5" id="zJM-NY-9I7"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="ZTB-5M-pyQ" secondAttribute="trailing" id="0st-HZ-PaW"/>
+                                <constraint firstAttribute="trailing" secondItem="fRA-vc-NbT" secondAttribute="trailing" id="DGI-MH-xti"/>
+                                <constraint firstAttribute="bottom" secondItem="ZTB-5M-pyQ" secondAttribute="bottom" id="FcQ-SP-Uh2"/>
+                                <constraint firstItem="fRA-vc-NbT" firstAttribute="top" secondItem="PFH-Jk-AD4" secondAttribute="top" id="J6D-NG-NND"/>
+                                <constraint firstAttribute="bottom" secondItem="fRA-vc-NbT" secondAttribute="bottom" id="WZK-lG-USr"/>
+                                <constraint firstItem="ZTB-5M-pyQ" firstAttribute="leading" secondItem="PFH-Jk-AD4" secondAttribute="leading" id="deg-B6-i4g"/>
+                                <constraint firstItem="fRA-vc-NbT" firstAttribute="leading" secondItem="PFH-Jk-AD4" secondAttribute="leading" id="meb-8a-9Wx"/>
+                                <constraint firstItem="ZTB-5M-pyQ" firstAttribute="top" secondItem="PFH-Jk-AD4" secondAttribute="top" id="vef-Kc-lx3"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="PFH-Jk-AD4" secondAttribute="trailing" id="1hM-QB-wWd"/>
+                        <constraint firstItem="PFH-Jk-AD4" firstAttribute="leading" secondItem="oZE-zO-QQu" secondAttribute="leading" id="6Bl-Im-E0s"/>
+                        <constraint firstItem="PFH-Jk-AD4" firstAttribute="leading" secondItem="oZE-zO-QQu" secondAttribute="leading" id="8zp-xA-3Lx"/>
+                        <constraint firstItem="PFH-Jk-AD4" firstAttribute="top" secondItem="oZE-zO-QQu" secondAttribute="top" id="kIp-zR-c6O"/>
+                        <constraint firstAttribute="bottom" secondItem="PFH-Jk-AD4" secondAttribute="bottom" id="w09-Cs-l3m"/>
+                    </constraints>
+                </scrollView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="IpM-Oy-p6w" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="JZH-cc-ZUG"/>
-                <constraint firstItem="IpM-Oy-p6w" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XDy-Mw-FgA"/>
+                <constraint firstItem="PFH-Jk-AD4" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="WPC-Bk-cLf"/>
+                <constraint firstItem="oZE-zO-QQu" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="XA7-c4-aVM"/>
+                <constraint firstItem="oZE-zO-QQu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kj6-uE-dGn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oZE-zO-QQu" secondAttribute="bottom" id="oIL-sn-g2h"/>
+                <constraint firstItem="oZE-zO-QQu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sRa-4a-sZ7"/>
+                <constraint firstItem="PFH-Jk-AD4" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" priority="250" id="yrB-zt-kZr"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
+    <resources>
+        <image name="bg_login" width="373" height="667"/>
+        <image name="btn_login_fb" width="258" height="50"/>
+        <image name="logo_login" width="261" height="98"/>
+    </resources>
 </document>
