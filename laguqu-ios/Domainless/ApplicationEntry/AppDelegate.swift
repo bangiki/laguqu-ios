@@ -16,12 +16,12 @@ import FBSDKLoginKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
+  let splash = SplashScreenViewController()
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
     window = UIWindow(frame: UIScreen.main.bounds)
     
-    let splash = SplashScreenViewController()
     window?.rootViewController = UINavigationController(rootViewController: splash)
     window?.makeKeyAndVisible()
     
@@ -29,7 +29,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     NFX.sharedInstance().start()
     #endif
     
+    //RunLoop.current.run(until: Date(timeIntervalSinceNow : 5.0))
+    Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(nextScreen), userInfo: nil, repeats: false)
     return true
+  }
+  
+  @objc private func nextScreen() {
+    splash.nextScreen()
   }
 
   func applicationWillResignActive(_ application: UIApplication) {

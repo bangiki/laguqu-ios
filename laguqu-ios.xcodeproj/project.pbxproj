@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		805DB77F2222ACB900C60348 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB77D2222ACB900C60348 /* LoginViewController.swift */; };
+		805DB7802222ACB900C60348 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805DB77E2222ACB900C60348 /* LoginViewController.xib */; };
 		80E1BD4722226FAA00516017 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BD4622226FAA00516017 /* AppDelegate.swift */; };
 		80E1BD4F22226FAA00516017 /* laguqu_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BD4D22226FAA00516017 /* laguqu_ios.xcdatamodeld */; };
 		80E1BD5122226FAC00516017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E1BD5022226FAC00516017 /* Assets.xcassets */; };
@@ -134,6 +136,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		805DB77D2222ACB900C60348 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		805DB77E2222ACB900C60348 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		80E1BD4322226FAA00516017 /* laguqu-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "laguqu-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E1BD4622226FAA00516017 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80E1BD4E22226FAA00516017 /* laguqu_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = laguqu_ios.xcdatamodel; sourceTree = "<group>"; };
@@ -362,6 +366,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		805DB77B2222AC9500C60348 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				805DB77C2222ACA800C60348 /* ViewController */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		805DB77C2222ACA800C60348 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				805DB77D2222ACB900C60348 /* LoginViewController.swift */,
+				805DB77E2222ACB900C60348 /* LoginViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		80E1BD3A22226FAA00516017 = {
 			isa = PBXGroup;
 			children = (
@@ -443,6 +464,7 @@
 		80E1BD8E2222761000516017 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				805DB77B2222AC9500C60348 /* Login */,
 				80E1BD902222775500516017 /* SplashScreen */,
 			);
 			path = Feature;
@@ -800,6 +822,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				805DB7802222ACB900C60348 /* LoginViewController.xib in Resources */,
 				80E1BD5422226FAC00516017 /* LaunchScreen.storyboard in Resources */,
 				80E1BD942222778900516017 /* SplashScreenViewController.xib in Resources */,
 				80E1BD5122226FAC00516017 /* Assets.xcassets in Resources */,
@@ -931,6 +954,7 @@
 				80E1BE83222278F700516017 /* SWGTrack.m in Sources */,
 				80E1BE5D222278F700516017 /* SWGArtist.m in Sources */,
 				80E1BD932222778900516017 /* SplashScreenViewController.swift in Sources */,
+				805DB77F2222ACB900C60348 /* LoginViewController.swift in Sources */,
 				80E1BE87222278F700516017 /* SWGAlbumApi.m in Sources */,
 				80E1BE95222278F700516017 /* VADayView.swift in Sources */,
 				80E1BE86222278F700516017 /* SWGTrackApi.m in Sources */,
