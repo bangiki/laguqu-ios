@@ -1,0 +1,1298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80E1BD4722226FAA00516017 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BD4622226FAA00516017 /* AppDelegate.swift */; };
+		80E1BD4F22226FAA00516017 /* laguqu_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BD4D22226FAA00516017 /* laguqu_ios.xcdatamodeld */; };
+		80E1BD5122226FAC00516017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E1BD5022226FAC00516017 /* Assets.xcassets */; };
+		80E1BD5422226FAC00516017 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E1BD5222226FAC00516017 /* LaunchScreen.storyboard */; };
+		80E1BD5F22226FAC00516017 /* laguqu_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BD5E22226FAC00516017 /* laguqu_iosTests.swift */; };
+		80E1BD6A22226FAC00516017 /* laguqu_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BD6922226FAC00516017 /* laguqu_iosUITests.swift */; };
+		80E1BD7B222273BF00516017 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E1BD78222273BF00516017 /* Bolts.framework */; };
+		80E1BD7C222273BF00516017 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E1BD79222273BF00516017 /* FBSDKCoreKit.framework */; };
+		80E1BD7D222273BF00516017 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E1BD7A222273BF00516017 /* FBSDKLoginKit.framework */; };
+		80E1BD80222274EB00516017 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E1BD7F222274EB00516017 /* SnapKit.framework */; };
+		80E1BD82222274EF00516017 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E1BD81222274EF00516017 /* ObjectMapper.framework */; };
+		80E1BD84222275B100516017 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E1BD83222275B100516017 /* SVProgressHUD.framework */; };
+		80E1BD86222275B900516017 /* netfox_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E1BD85222275B900516017 /* netfox_ios.framework */; };
+		80E1BD88222275CC00516017 /* ISO8601.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E1BD87222275CC00516017 /* ISO8601.framework */; };
+		80E1BD8A222275D200516017 /* JSONModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E1BD89222275D200516017 /* JSONModel.framework */; };
+		80E1BD8C222275DE00516017 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E1BD8B222275DE00516017 /* AFNetworking.framework */; };
+		80E1BD932222778900516017 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BD912222778900516017 /* SplashScreenViewController.swift */; };
+		80E1BD942222778900516017 /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E1BD922222778900516017 /* SplashScreenViewController.xib */; };
+		80E1BE41222278F700516017 /* SWGQueryParamCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BD98222278F700516017 /* SWGQueryParamCollection.m */; };
+		80E1BE42222278F700516017 /* SWGConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BD9A222278F700516017 /* SWGConfiguration.m */; };
+		80E1BE43222278F700516017 /* SWGJSONResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BD9E222278F700516017 /* SWGJSONResponseSerializer.m */; };
+		80E1BE44222278F700516017 /* SWGResponseDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BD9F222278F700516017 /* SWGResponseDeserializer.m */; };
+		80E1BE45222278F700516017 /* SWGJSONRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDA0222278F700516017 /* SWGJSONRequestSerializer.m */; };
+		80E1BE46222278F700516017 /* SWGLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDA2222278F700516017 /* SWGLogger.m */; };
+		80E1BE47222278F700516017 /* SWGSanitizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDA4222278F700516017 /* SWGSanitizer.m */; };
+		80E1BE48222278F700516017 /* SWGApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDA7222278F700516017 /* SWGApiClient.m */; };
+		80E1BE49222278F700516017 /* JSONValueTransformer+ISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDA8222278F700516017 /* JSONValueTransformer+ISO8601.m */; };
+		80E1BE4A222278F700516017 /* SWGObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDAC222278F700516017 /* SWGObject.m */; };
+		80E1BE4B222278F700516017 /* SWGInlineResponse2006MessageBodyTrackList.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDAE222278F700516017 /* SWGInlineResponse2006MessageBodyTrackList.m */; };
+		80E1BE4C222278F700516017 /* SWGInlineResponse2007Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDB0222278F700516017 /* SWGInlineResponse2007Message.m */; };
+		80E1BE4D222278F700516017 /* SWGInlineResponse2007MessageBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDB1222278F700516017 /* SWGInlineResponse2007MessageBody.m */; };
+		80E1BE4E222278F700516017 /* SWGInlineResponse2006Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDB2222278F700516017 /* SWGInlineResponse2006Message.m */; };
+		80E1BE4F222278F700516017 /* SWGInlineResponse200MessageHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDB3222278F700516017 /* SWGInlineResponse200MessageHeader.m */; };
+		80E1BE50222278F700516017 /* SWGInlineResponse2001.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDB4222278F700516017 /* SWGInlineResponse2001.m */; };
+		80E1BE51222278F700516017 /* SWGInlineResponse2002MessageHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDB5222278F700516017 /* SWGInlineResponse2002MessageHeader.m */; };
+		80E1BE52222278F700516017 /* SWGAlbumPrimaryGenresMusicGenreList.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDB9222278F700516017 /* SWGAlbumPrimaryGenresMusicGenreList.m */; };
+		80E1BE53222278F700516017 /* SWGInlineResponse20010Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDBB222278F700516017 /* SWGInlineResponse20010Message.m */; };
+		80E1BE54222278F700516017 /* SWGTrackPrimaryGenresMusicGenre.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDBD222278F700516017 /* SWGTrackPrimaryGenresMusicGenre.m */; };
+		80E1BE55222278F700516017 /* SWGInlineResponse2005MessageHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDC0222278F700516017 /* SWGInlineResponse2005MessageHeader.m */; };
+		80E1BE56222278F700516017 /* SWGInlineResponse2005.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDC2222278F700516017 /* SWGInlineResponse2005.m */; };
+		80E1BE57222278F700516017 /* SWGArtistArtistNameTranslationList.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDC3222278F700516017 /* SWGArtistArtistNameTranslationList.m */; };
+		80E1BE58222278F700516017 /* SWGArtistSecondaryGenres.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDC5222278F700516017 /* SWGArtistSecondaryGenres.m */; };
+		80E1BE59222278F700516017 /* SWGTrackPrimaryGenres.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDC7222278F700516017 /* SWGTrackPrimaryGenres.m */; };
+		80E1BE5A222278F700516017 /* SWGArtistPrimaryGenresMusicGenre.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDC8222278F700516017 /* SWGArtistPrimaryGenresMusicGenre.m */; };
+		80E1BE5B222278F700516017 /* SWGInlineResponse2001MessageBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDC9222278F700516017 /* SWGInlineResponse2001MessageBody.m */; };
+		80E1BE5C222278F700516017 /* SWGInlineResponse2006MessageBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDCA222278F700516017 /* SWGInlineResponse2006MessageBody.m */; };
+		80E1BE5D222278F700516017 /* SWGArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDCF222278F700516017 /* SWGArtist.m */; };
+		80E1BE5E222278F700516017 /* SWGInlineResponse2001MessageHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDD0222278F700516017 /* SWGInlineResponse2001MessageHeader.m */; };
+		80E1BE5F222278F700516017 /* SWGInlineResponse2002.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDD2222278F700516017 /* SWGInlineResponse2002.m */; };
+		80E1BE60222278F700516017 /* SWGAlbumPrimaryGenresMusicGenre.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDD6222278F700516017 /* SWGAlbumPrimaryGenresMusicGenre.m */; };
+		80E1BE61222278F700516017 /* SWGInlineResponse2008.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDD7222278F700516017 /* SWGInlineResponse2008.m */; };
+		80E1BE62222278F700516017 /* SWGInlineResponse2006.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDDB222278F700516017 /* SWGInlineResponse2006.m */; };
+		80E1BE63222278F700516017 /* SWGInlineResponse2001Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDE1222278F700516017 /* SWGInlineResponse2001Message.m */; };
+		80E1BE64222278F700516017 /* SWGArtistArtistAliasList.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDE7222278F700516017 /* SWGArtistArtistAliasList.m */; };
+		80E1BE65222278F700516017 /* SWGSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDE8222278F700516017 /* SWGSnippet.m */; };
+		80E1BE66222278F700516017 /* SWGArtistPrimaryGenres.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDEA222278F700516017 /* SWGArtistPrimaryGenres.m */; };
+		80E1BE67222278F700516017 /* SWGInlineResponse2009.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDEC222278F700516017 /* SWGInlineResponse2009.m */; };
+		80E1BE68222278F700516017 /* SWGInlineResponse20010.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDED222278F700516017 /* SWGInlineResponse20010.m */; };
+		80E1BE69222278F700516017 /* SWGInlineResponse2003.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDEF222278F700516017 /* SWGInlineResponse2003.m */; };
+		80E1BE6A222278F700516017 /* SWGInlineResponse200Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDF0222278F700516017 /* SWGInlineResponse200Message.m */; };
+		80E1BE6B222278F700516017 /* SWGInlineResponse2007.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDF2222278F700516017 /* SWGInlineResponse2007.m */; };
+		80E1BE6C222278F700516017 /* SWGTrackSecondaryGenresMusicGenre.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDF3222278F700516017 /* SWGTrackSecondaryGenresMusicGenre.m */; };
+		80E1BE6D222278F700516017 /* SWGSubtitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDF5222278F700516017 /* SWGSubtitle.m */; };
+		80E1BE6E222278F700516017 /* SWGInlineResponse2008MessageBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDF9222278F700516017 /* SWGInlineResponse2008MessageBody.m */; };
+		80E1BE6F222278F700516017 /* SWGArtistPrimaryGenresMusicGenreList.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDFE222278F700516017 /* SWGArtistPrimaryGenresMusicGenreList.m */; };
+		80E1BE70222278F700516017 /* SWGAlbumPrimaryGenres.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BDFF222278F700516017 /* SWGAlbumPrimaryGenres.m */; };
+		80E1BE71222278F700516017 /* SWGInlineResponse2004Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE00222278F700516017 /* SWGInlineResponse2004Message.m */; };
+		80E1BE72222278F700516017 /* SWGInlineResponse2005Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE01222278F700516017 /* SWGInlineResponse2005Message.m */; };
+		80E1BE73222278F700516017 /* SWGTrackSecondaryGenres.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE07222278F700516017 /* SWGTrackSecondaryGenres.m */; };
+		80E1BE74222278F700516017 /* SWGAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE09222278F700516017 /* SWGAlbum.m */; };
+		80E1BE75222278F700516017 /* SWGArtistArtistNameTranslation.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE0A222278F700516017 /* SWGArtistArtistNameTranslation.m */; };
+		80E1BE76222278F700516017 /* SWGInlineResponse2009Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE0B222278F700516017 /* SWGInlineResponse2009Message.m */; };
+		80E1BE77222278F700516017 /* SWGInlineResponse2008Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE0C222278F700516017 /* SWGInlineResponse2008Message.m */; };
+		80E1BE78222278F700516017 /* SWGLyrics.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE0E222278F700516017 /* SWGLyrics.m */; };
+		80E1BE79222278F700516017 /* SWGInlineResponse2004MessageBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE0F222278F700516017 /* SWGInlineResponse2004MessageBody.m */; };
+		80E1BE7A222278F700516017 /* SWGTrackSecondaryGenresMusicGenreList.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE10222278F700516017 /* SWGTrackSecondaryGenresMusicGenreList.m */; };
+		80E1BE7B222278F700516017 /* SWGInlineResponse2003MessageBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE11222278F700516017 /* SWGInlineResponse2003MessageBody.m */; };
+		80E1BE7C222278F700516017 /* SWGInlineResponse2003Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE14222278F700516017 /* SWGInlineResponse2003Message.m */; };
+		80E1BE7D222278F700516017 /* SWGInlineResponse2002Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE15222278F700516017 /* SWGInlineResponse2002Message.m */; };
+		80E1BE7E222278F700516017 /* SWGTrackPrimaryGenresMusicGenreList.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE16222278F700516017 /* SWGTrackPrimaryGenresMusicGenreList.m */; };
+		80E1BE7F222278F700516017 /* SWGInlineResponse2004.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE18222278F700516017 /* SWGInlineResponse2004.m */; };
+		80E1BE80222278F700516017 /* SWGInlineResponse2002MessageBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE1D222278F700516017 /* SWGInlineResponse2002MessageBody.m */; };
+		80E1BE81222278F700516017 /* SWGInlineResponse20010MessageBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE1E222278F700516017 /* SWGInlineResponse20010MessageBody.m */; };
+		80E1BE82222278F700516017 /* SWGInlineResponse200MessageBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE1F222278F700516017 /* SWGInlineResponse200MessageBody.m */; };
+		80E1BE83222278F700516017 /* SWGTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE20222278F700516017 /* SWGTrack.m */; };
+		80E1BE84222278F700516017 /* SWGArtistArtistCredits.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE21222278F700516017 /* SWGArtistArtistCredits.m */; };
+		80E1BE85222278F700516017 /* SWGInlineResponse200.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE23222278F700516017 /* SWGInlineResponse200.m */; };
+		80E1BE86222278F700516017 /* SWGTrackApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE29222278F700516017 /* SWGTrackApi.m */; };
+		80E1BE87222278F700516017 /* SWGAlbumApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE2A222278F700516017 /* SWGAlbumApi.m */; };
+		80E1BE88222278F700516017 /* SWGLyricsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE2B222278F700516017 /* SWGLyricsApi.m */; };
+		80E1BE89222278F700516017 /* SWGSubtitleApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE2C222278F700516017 /* SWGSubtitleApi.m */; };
+		80E1BE8A222278F700516017 /* SWGArtistApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE2D222278F700516017 /* SWGArtistApi.m */; };
+		80E1BE8B222278F700516017 /* SWGSnippetApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE30222278F700516017 /* SWGSnippetApi.m */; };
+		80E1BE8C222278F700516017 /* VAMonthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE32222278F700516017 /* VAMonthHeaderView.swift */; };
+		80E1BE8D222278F700516017 /* VAMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE33222278F700516017 /* VAMonth.swift */; };
+		80E1BE8E222278F700516017 /* VADotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE34222278F700516017 /* VADotView.swift */; };
+		80E1BE8F222278F700516017 /* VACalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE35222278F700516017 /* VACalendar.swift */; };
+		80E1BE90222278F700516017 /* VAWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE36222278F700516017 /* VAWeekView.swift */; };
+		80E1BE91222278F700516017 /* VACalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE38222278F700516017 /* VACalendarView.swift */; };
+		80E1BE92222278F700516017 /* VAWeekDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE39222278F700516017 /* VAWeekDaysView.swift */; };
+		80E1BE93222278F700516017 /* VAWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE3A222278F700516017 /* VAWeek.swift */; };
+		80E1BE94222278F700516017 /* VAFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE3B222278F700516017 /* VAFormatters.swift */; };
+		80E1BE95222278F700516017 /* VADayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE3C222278F700516017 /* VADayView.swift */; };
+		80E1BE96222278F700516017 /* VADay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE3D222278F700516017 /* VADay.swift */; };
+		80E1BE97222278F700516017 /* VAMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE3E222278F700516017 /* VAMonthView.swift */; };
+		80E1BE98222278F700516017 /* VACalendarMonthDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE3F222278F700516017 /* VACalendarMonthDelegate.swift */; };
+		80E1BE99222278F700516017 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80E1BE40222278F700516017 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80E1BD5B22226FAC00516017 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80E1BD3B22226FAA00516017 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80E1BD4222226FAA00516017;
+			remoteInfo = "laguqu-ios";
+		};
+		80E1BD6622226FAC00516017 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80E1BD3B22226FAA00516017 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80E1BD4222226FAA00516017;
+			remoteInfo = "laguqu-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80E1BD4322226FAA00516017 /* laguqu-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "laguqu-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E1BD4622226FAA00516017 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80E1BD4E22226FAA00516017 /* laguqu_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = laguqu_ios.xcdatamodel; sourceTree = "<group>"; };
+		80E1BD5022226FAC00516017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80E1BD5322226FAC00516017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80E1BD5522226FAC00516017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80E1BD5A22226FAC00516017 /* laguqu-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "laguqu-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E1BD5E22226FAC00516017 /* laguqu_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = laguqu_iosTests.swift; sourceTree = "<group>"; };
+		80E1BD6022226FAC00516017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80E1BD6522226FAC00516017 /* laguqu-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "laguqu-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E1BD6922226FAC00516017 /* laguqu_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = laguqu_iosUITests.swift; sourceTree = "<group>"; };
+		80E1BD6B22226FAC00516017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80E1BD78222273BF00516017 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Frameworks/Bolts.framework; sourceTree = "<group>"; };
+		80E1BD79222273BF00516017 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Frameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		80E1BD7A222273BF00516017 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Frameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		80E1BD7F222274EB00516017 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		80E1BD81222274EF00516017 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		80E1BD83222275B100516017 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		80E1BD85222275B900516017 /* netfox_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = netfox_ios.framework; path = Carthage/Build/iOS/netfox_ios.framework; sourceTree = "<group>"; };
+		80E1BD87222275CC00516017 /* ISO8601.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISO8601.framework; path = Carthage/Build/iOS/ISO8601.framework; sourceTree = "<group>"; };
+		80E1BD89222275D200516017 /* JSONModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSONModel.framework; path = Carthage/Build/iOS/JSONModel.framework; sourceTree = "<group>"; };
+		80E1BD8B222275DE00516017 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		80E1BD912222778900516017 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		80E1BD922222778900516017 /* SplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
+		80E1BD98222278F700516017 /* SWGQueryParamCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGQueryParamCollection.m; sourceTree = "<group>"; };
+		80E1BD99222278F700516017 /* SWGSanitizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGSanitizer.h; sourceTree = "<group>"; };
+		80E1BD9A222278F700516017 /* SWGConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGConfiguration.m; sourceTree = "<group>"; };
+		80E1BD9B222278F700516017 /* SWGLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGLogger.h; sourceTree = "<group>"; };
+		80E1BD9C222278F700516017 /* JSONValueTransformer+ISO8601.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+ISO8601.h"; sourceTree = "<group>"; };
+		80E1BD9D222278F700516017 /* SWGApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGApiClient.h; sourceTree = "<group>"; };
+		80E1BD9E222278F700516017 /* SWGJSONResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGJSONResponseSerializer.m; sourceTree = "<group>"; };
+		80E1BD9F222278F700516017 /* SWGResponseDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGResponseDeserializer.m; sourceTree = "<group>"; };
+		80E1BDA0222278F700516017 /* SWGJSONRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGJSONRequestSerializer.m; sourceTree = "<group>"; };
+		80E1BDA1222278F700516017 /* SWGObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGObject.h; sourceTree = "<group>"; };
+		80E1BDA2222278F700516017 /* SWGLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGLogger.m; sourceTree = "<group>"; };
+		80E1BDA3222278F700516017 /* SWGConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGConfiguration.h; sourceTree = "<group>"; };
+		80E1BDA4222278F700516017 /* SWGSanitizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGSanitizer.m; sourceTree = "<group>"; };
+		80E1BDA5222278F700516017 /* SWGQueryParamCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGQueryParamCollection.h; sourceTree = "<group>"; };
+		80E1BDA6222278F700516017 /* SWGApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGApi.h; sourceTree = "<group>"; };
+		80E1BDA7222278F700516017 /* SWGApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGApiClient.m; sourceTree = "<group>"; };
+		80E1BDA8222278F700516017 /* JSONValueTransformer+ISO8601.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+ISO8601.m"; sourceTree = "<group>"; };
+		80E1BDA9222278F700516017 /* SWGResponseDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGResponseDeserializer.h; sourceTree = "<group>"; };
+		80E1BDAA222278F700516017 /* SWGJSONResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGJSONResponseSerializer.h; sourceTree = "<group>"; };
+		80E1BDAB222278F700516017 /* SWGJSONRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGJSONRequestSerializer.h; sourceTree = "<group>"; };
+		80E1BDAC222278F700516017 /* SWGObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGObject.m; sourceTree = "<group>"; };
+		80E1BDAE222278F700516017 /* SWGInlineResponse2006MessageBodyTrackList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2006MessageBodyTrackList.m; sourceTree = "<group>"; };
+		80E1BDAF222278F700516017 /* SWGInlineResponse2008MessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2008MessageBody.h; sourceTree = "<group>"; };
+		80E1BDB0222278F700516017 /* SWGInlineResponse2007Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2007Message.m; sourceTree = "<group>"; };
+		80E1BDB1222278F700516017 /* SWGInlineResponse2007MessageBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2007MessageBody.m; sourceTree = "<group>"; };
+		80E1BDB2222278F700516017 /* SWGInlineResponse2006Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2006Message.m; sourceTree = "<group>"; };
+		80E1BDB3222278F700516017 /* SWGInlineResponse200MessageHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse200MessageHeader.m; sourceTree = "<group>"; };
+		80E1BDB4222278F700516017 /* SWGInlineResponse2001.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2001.m; sourceTree = "<group>"; };
+		80E1BDB5222278F700516017 /* SWGInlineResponse2002MessageHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2002MessageHeader.m; sourceTree = "<group>"; };
+		80E1BDB6222278F700516017 /* SWGSubtitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGSubtitle.h; sourceTree = "<group>"; };
+		80E1BDB7222278F700516017 /* SWGInlineResponse2007.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2007.h; sourceTree = "<group>"; };
+		80E1BDB8222278F700516017 /* SWGTrackSecondaryGenresMusicGenre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGTrackSecondaryGenresMusicGenre.h; sourceTree = "<group>"; };
+		80E1BDB9222278F700516017 /* SWGAlbumPrimaryGenresMusicGenreList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGAlbumPrimaryGenresMusicGenreList.m; sourceTree = "<group>"; };
+		80E1BDBA222278F700516017 /* SWGInlineResponse200Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse200Message.h; sourceTree = "<group>"; };
+		80E1BDBB222278F700516017 /* SWGInlineResponse20010Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse20010Message.m; sourceTree = "<group>"; };
+		80E1BDBC222278F700516017 /* SWGInlineResponse2003.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2003.h; sourceTree = "<group>"; };
+		80E1BDBD222278F700516017 /* SWGTrackPrimaryGenresMusicGenre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGTrackPrimaryGenresMusicGenre.m; sourceTree = "<group>"; };
+		80E1BDBE222278F700516017 /* SWGInlineResponse20010.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse20010.h; sourceTree = "<group>"; };
+		80E1BDBF222278F700516017 /* SWGInlineResponse2009.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2009.h; sourceTree = "<group>"; };
+		80E1BDC0222278F700516017 /* SWGInlineResponse2005MessageHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2005MessageHeader.m; sourceTree = "<group>"; };
+		80E1BDC1222278F700516017 /* SWGArtistPrimaryGenres.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGArtistPrimaryGenres.h; sourceTree = "<group>"; };
+		80E1BDC2222278F700516017 /* SWGInlineResponse2005.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2005.m; sourceTree = "<group>"; };
+		80E1BDC3222278F700516017 /* SWGArtistArtistNameTranslationList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGArtistArtistNameTranslationList.m; sourceTree = "<group>"; };
+		80E1BDC4222278F700516017 /* SWGAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGAlbum.h; sourceTree = "<group>"; };
+		80E1BDC5222278F700516017 /* SWGArtistSecondaryGenres.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGArtistSecondaryGenres.m; sourceTree = "<group>"; };
+		80E1BDC6222278F700516017 /* SWGTrackSecondaryGenres.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGTrackSecondaryGenres.h; sourceTree = "<group>"; };
+		80E1BDC7222278F700516017 /* SWGTrackPrimaryGenres.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGTrackPrimaryGenres.m; sourceTree = "<group>"; };
+		80E1BDC8222278F700516017 /* SWGArtistPrimaryGenresMusicGenre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGArtistPrimaryGenresMusicGenre.m; sourceTree = "<group>"; };
+		80E1BDC9222278F700516017 /* SWGInlineResponse2001MessageBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2001MessageBody.m; sourceTree = "<group>"; };
+		80E1BDCA222278F700516017 /* SWGInlineResponse2006MessageBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2006MessageBody.m; sourceTree = "<group>"; };
+		80E1BDCB222278F700516017 /* SWGInlineResponse2005Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2005Message.h; sourceTree = "<group>"; };
+		80E1BDCC222278F700516017 /* SWGInlineResponse2004Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2004Message.h; sourceTree = "<group>"; };
+		80E1BDCD222278F700516017 /* SWGArtistPrimaryGenresMusicGenreList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGArtistPrimaryGenresMusicGenreList.h; sourceTree = "<group>"; };
+		80E1BDCE222278F700516017 /* SWGAlbumPrimaryGenres.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGAlbumPrimaryGenres.h; sourceTree = "<group>"; };
+		80E1BDCF222278F700516017 /* SWGArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGArtist.m; sourceTree = "<group>"; };
+		80E1BDD0222278F700516017 /* SWGInlineResponse2001MessageHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2001MessageHeader.m; sourceTree = "<group>"; };
+		80E1BDD1222278F700516017 /* SWGInlineResponse2004.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2004.h; sourceTree = "<group>"; };
+		80E1BDD2222278F700516017 /* SWGInlineResponse2002.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2002.m; sourceTree = "<group>"; };
+		80E1BDD3222278F700516017 /* SWGTrackPrimaryGenresMusicGenreList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGTrackPrimaryGenresMusicGenreList.h; sourceTree = "<group>"; };
+		80E1BDD4222278F700516017 /* SWGInlineResponse2002Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2002Message.h; sourceTree = "<group>"; };
+		80E1BDD5222278F700516017 /* SWGInlineResponse2003Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2003Message.h; sourceTree = "<group>"; };
+		80E1BDD6222278F700516017 /* SWGAlbumPrimaryGenresMusicGenre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGAlbumPrimaryGenresMusicGenre.m; sourceTree = "<group>"; };
+		80E1BDD7222278F700516017 /* SWGInlineResponse2008.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2008.m; sourceTree = "<group>"; };
+		80E1BDD8222278F700516017 /* SWGTrackSecondaryGenresMusicGenreList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGTrackSecondaryGenresMusicGenreList.h; sourceTree = "<group>"; };
+		80E1BDD9222278F700516017 /* SWGInlineResponse2003MessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2003MessageBody.h; sourceTree = "<group>"; };
+		80E1BDDA222278F700516017 /* SWGInlineResponse2004MessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2004MessageBody.h; sourceTree = "<group>"; };
+		80E1BDDB222278F700516017 /* SWGInlineResponse2006.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2006.m; sourceTree = "<group>"; };
+		80E1BDDC222278F700516017 /* SWGLyrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGLyrics.h; sourceTree = "<group>"; };
+		80E1BDDD222278F700516017 /* SWGInlineResponse2008Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2008Message.h; sourceTree = "<group>"; };
+		80E1BDDE222278F700516017 /* SWGInlineResponse2009Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2009Message.h; sourceTree = "<group>"; };
+		80E1BDDF222278F700516017 /* SWGArtistArtistNameTranslation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGArtistArtistNameTranslation.h; sourceTree = "<group>"; };
+		80E1BDE0222278F700516017 /* SWGInlineResponse200.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse200.h; sourceTree = "<group>"; };
+		80E1BDE1222278F700516017 /* SWGInlineResponse2001Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2001Message.m; sourceTree = "<group>"; };
+		80E1BDE2222278F700516017 /* SWGArtistArtistCredits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGArtistArtistCredits.h; sourceTree = "<group>"; };
+		80E1BDE3222278F700516017 /* SWGTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGTrack.h; sourceTree = "<group>"; };
+		80E1BDE4222278F700516017 /* SWGInlineResponse200MessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse200MessageBody.h; sourceTree = "<group>"; };
+		80E1BDE5222278F700516017 /* SWGInlineResponse20010MessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse20010MessageBody.h; sourceTree = "<group>"; };
+		80E1BDE6222278F700516017 /* SWGInlineResponse2002MessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2002MessageBody.h; sourceTree = "<group>"; };
+		80E1BDE7222278F700516017 /* SWGArtistArtistAliasList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGArtistArtistAliasList.m; sourceTree = "<group>"; };
+		80E1BDE8222278F700516017 /* SWGSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGSnippet.m; sourceTree = "<group>"; };
+		80E1BDE9222278F700516017 /* SWGInlineResponse2005.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2005.h; sourceTree = "<group>"; };
+		80E1BDEA222278F700516017 /* SWGArtistPrimaryGenres.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGArtistPrimaryGenres.m; sourceTree = "<group>"; };
+		80E1BDEB222278F700516017 /* SWGInlineResponse2005MessageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2005MessageHeader.h; sourceTree = "<group>"; };
+		80E1BDEC222278F700516017 /* SWGInlineResponse2009.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2009.m; sourceTree = "<group>"; };
+		80E1BDED222278F700516017 /* SWGInlineResponse20010.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse20010.m; sourceTree = "<group>"; };
+		80E1BDEE222278F700516017 /* SWGTrackPrimaryGenresMusicGenre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGTrackPrimaryGenresMusicGenre.h; sourceTree = "<group>"; };
+		80E1BDEF222278F700516017 /* SWGInlineResponse2003.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2003.m; sourceTree = "<group>"; };
+		80E1BDF0222278F700516017 /* SWGInlineResponse200Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse200Message.m; sourceTree = "<group>"; };
+		80E1BDF1222278F700516017 /* SWGInlineResponse20010Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse20010Message.h; sourceTree = "<group>"; };
+		80E1BDF2222278F700516017 /* SWGInlineResponse2007.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2007.m; sourceTree = "<group>"; };
+		80E1BDF3222278F700516017 /* SWGTrackSecondaryGenresMusicGenre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGTrackSecondaryGenresMusicGenre.m; sourceTree = "<group>"; };
+		80E1BDF4222278F700516017 /* SWGAlbumPrimaryGenresMusicGenreList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGAlbumPrimaryGenresMusicGenreList.h; sourceTree = "<group>"; };
+		80E1BDF5222278F700516017 /* SWGSubtitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGSubtitle.m; sourceTree = "<group>"; };
+		80E1BDF6222278F700516017 /* SWGInlineResponse2002MessageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2002MessageHeader.h; sourceTree = "<group>"; };
+		80E1BDF7222278F700516017 /* SWGInlineResponse200MessageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse200MessageHeader.h; sourceTree = "<group>"; };
+		80E1BDF8222278F700516017 /* SWGInlineResponse2001.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2001.h; sourceTree = "<group>"; };
+		80E1BDF9222278F700516017 /* SWGInlineResponse2008MessageBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2008MessageBody.m; sourceTree = "<group>"; };
+		80E1BDFA222278F700516017 /* SWGInlineResponse2006MessageBodyTrackList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2006MessageBodyTrackList.h; sourceTree = "<group>"; };
+		80E1BDFB222278F700516017 /* SWGInlineResponse2007MessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2007MessageBody.h; sourceTree = "<group>"; };
+		80E1BDFC222278F700516017 /* SWGInlineResponse2006Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2006Message.h; sourceTree = "<group>"; };
+		80E1BDFD222278F700516017 /* SWGInlineResponse2007Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2007Message.h; sourceTree = "<group>"; };
+		80E1BDFE222278F700516017 /* SWGArtistPrimaryGenresMusicGenreList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGArtistPrimaryGenresMusicGenreList.m; sourceTree = "<group>"; };
+		80E1BDFF222278F700516017 /* SWGAlbumPrimaryGenres.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGAlbumPrimaryGenres.m; sourceTree = "<group>"; };
+		80E1BE00222278F700516017 /* SWGInlineResponse2004Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2004Message.m; sourceTree = "<group>"; };
+		80E1BE01222278F700516017 /* SWGInlineResponse2005Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2005Message.m; sourceTree = "<group>"; };
+		80E1BE02222278F700516017 /* SWGInlineResponse2006MessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2006MessageBody.h; sourceTree = "<group>"; };
+		80E1BE03222278F700516017 /* SWGInlineResponse2001MessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2001MessageBody.h; sourceTree = "<group>"; };
+		80E1BE04222278F700516017 /* SWGArtistPrimaryGenresMusicGenre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGArtistPrimaryGenresMusicGenre.h; sourceTree = "<group>"; };
+		80E1BE05222278F700516017 /* SWGArtistSecondaryGenres.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGArtistSecondaryGenres.h; sourceTree = "<group>"; };
+		80E1BE06222278F700516017 /* SWGTrackPrimaryGenres.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGTrackPrimaryGenres.h; sourceTree = "<group>"; };
+		80E1BE07222278F700516017 /* SWGTrackSecondaryGenres.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGTrackSecondaryGenres.m; sourceTree = "<group>"; };
+		80E1BE08222278F700516017 /* SWGArtistArtistNameTranslationList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGArtistArtistNameTranslationList.h; sourceTree = "<group>"; };
+		80E1BE09222278F700516017 /* SWGAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGAlbum.m; sourceTree = "<group>"; };
+		80E1BE0A222278F700516017 /* SWGArtistArtistNameTranslation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGArtistArtistNameTranslation.m; sourceTree = "<group>"; };
+		80E1BE0B222278F700516017 /* SWGInlineResponse2009Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2009Message.m; sourceTree = "<group>"; };
+		80E1BE0C222278F700516017 /* SWGInlineResponse2008Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2008Message.m; sourceTree = "<group>"; };
+		80E1BE0D222278F700516017 /* SWGInlineResponse2006.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2006.h; sourceTree = "<group>"; };
+		80E1BE0E222278F700516017 /* SWGLyrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGLyrics.m; sourceTree = "<group>"; };
+		80E1BE0F222278F700516017 /* SWGInlineResponse2004MessageBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2004MessageBody.m; sourceTree = "<group>"; };
+		80E1BE10222278F700516017 /* SWGTrackSecondaryGenresMusicGenreList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGTrackSecondaryGenresMusicGenreList.m; sourceTree = "<group>"; };
+		80E1BE11222278F700516017 /* SWGInlineResponse2003MessageBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2003MessageBody.m; sourceTree = "<group>"; };
+		80E1BE12222278F700516017 /* SWGAlbumPrimaryGenresMusicGenre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGAlbumPrimaryGenresMusicGenre.h; sourceTree = "<group>"; };
+		80E1BE13222278F700516017 /* SWGInlineResponse2008.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2008.h; sourceTree = "<group>"; };
+		80E1BE14222278F700516017 /* SWGInlineResponse2003Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2003Message.m; sourceTree = "<group>"; };
+		80E1BE15222278F700516017 /* SWGInlineResponse2002Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2002Message.m; sourceTree = "<group>"; };
+		80E1BE16222278F700516017 /* SWGTrackPrimaryGenresMusicGenreList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGTrackPrimaryGenresMusicGenreList.m; sourceTree = "<group>"; };
+		80E1BE17222278F700516017 /* SWGInlineResponse2002.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2002.h; sourceTree = "<group>"; };
+		80E1BE18222278F700516017 /* SWGInlineResponse2004.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2004.m; sourceTree = "<group>"; };
+		80E1BE19222278F700516017 /* SWGInlineResponse2001MessageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2001MessageHeader.h; sourceTree = "<group>"; };
+		80E1BE1A222278F700516017 /* SWGArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGArtist.h; sourceTree = "<group>"; };
+		80E1BE1B222278F700516017 /* SWGArtistArtistAliasList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGArtistArtistAliasList.h; sourceTree = "<group>"; };
+		80E1BE1C222278F700516017 /* SWGSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGSnippet.h; sourceTree = "<group>"; };
+		80E1BE1D222278F700516017 /* SWGInlineResponse2002MessageBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse2002MessageBody.m; sourceTree = "<group>"; };
+		80E1BE1E222278F700516017 /* SWGInlineResponse20010MessageBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse20010MessageBody.m; sourceTree = "<group>"; };
+		80E1BE1F222278F700516017 /* SWGInlineResponse200MessageBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse200MessageBody.m; sourceTree = "<group>"; };
+		80E1BE20222278F700516017 /* SWGTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGTrack.m; sourceTree = "<group>"; };
+		80E1BE21222278F700516017 /* SWGArtistArtistCredits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGArtistArtistCredits.m; sourceTree = "<group>"; };
+		80E1BE22222278F700516017 /* SWGInlineResponse2001Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGInlineResponse2001Message.h; sourceTree = "<group>"; };
+		80E1BE23222278F700516017 /* SWGInlineResponse200.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGInlineResponse200.m; sourceTree = "<group>"; };
+		80E1BE25222278F700516017 /* SWGSubtitleApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGSubtitleApi.h; sourceTree = "<group>"; };
+		80E1BE26222278F700516017 /* SWGLyricsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGLyricsApi.h; sourceTree = "<group>"; };
+		80E1BE27222278F700516017 /* SWGArtistApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGArtistApi.h; sourceTree = "<group>"; };
+		80E1BE28222278F700516017 /* SWGSnippetApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGSnippetApi.h; sourceTree = "<group>"; };
+		80E1BE29222278F700516017 /* SWGTrackApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGTrackApi.m; sourceTree = "<group>"; };
+		80E1BE2A222278F700516017 /* SWGAlbumApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGAlbumApi.m; sourceTree = "<group>"; };
+		80E1BE2B222278F700516017 /* SWGLyricsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGLyricsApi.m; sourceTree = "<group>"; };
+		80E1BE2C222278F700516017 /* SWGSubtitleApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGSubtitleApi.m; sourceTree = "<group>"; };
+		80E1BE2D222278F700516017 /* SWGArtistApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGArtistApi.m; sourceTree = "<group>"; };
+		80E1BE2E222278F700516017 /* SWGAlbumApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGAlbumApi.h; sourceTree = "<group>"; };
+		80E1BE2F222278F700516017 /* SWGTrackApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGTrackApi.h; sourceTree = "<group>"; };
+		80E1BE30222278F700516017 /* SWGSnippetApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGSnippetApi.m; sourceTree = "<group>"; };
+		80E1BE32222278F700516017 /* VAMonthHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAMonthHeaderView.swift; sourceTree = "<group>"; };
+		80E1BE33222278F700516017 /* VAMonth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAMonth.swift; sourceTree = "<group>"; };
+		80E1BE34222278F700516017 /* VADotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VADotView.swift; sourceTree = "<group>"; };
+		80E1BE35222278F700516017 /* VACalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VACalendar.swift; sourceTree = "<group>"; };
+		80E1BE36222278F700516017 /* VAWeekView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAWeekView.swift; sourceTree = "<group>"; };
+		80E1BE37222278F700516017 /* VACalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VACalendar.h; sourceTree = "<group>"; };
+		80E1BE38222278F700516017 /* VACalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VACalendarView.swift; sourceTree = "<group>"; };
+		80E1BE39222278F700516017 /* VAWeekDaysView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAWeekDaysView.swift; sourceTree = "<group>"; };
+		80E1BE3A222278F700516017 /* VAWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAWeek.swift; sourceTree = "<group>"; };
+		80E1BE3B222278F700516017 /* VAFormatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAFormatters.swift; sourceTree = "<group>"; };
+		80E1BE3C222278F700516017 /* VADayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VADayView.swift; sourceTree = "<group>"; };
+		80E1BE3D222278F700516017 /* VADay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VADay.swift; sourceTree = "<group>"; };
+		80E1BE3E222278F700516017 /* VAMonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAMonthView.swift; sourceTree = "<group>"; };
+		80E1BE3F222278F700516017 /* VACalendarMonthDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VACalendarMonthDelegate.swift; sourceTree = "<group>"; };
+		80E1BE40222278F700516017 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80E1BE9C22227A4400516017 /* BaseProject-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseProject-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80E1BD4022226FAA00516017 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E1BD80222274EB00516017 /* SnapKit.framework in Frameworks */,
+				80E1BD82222274EF00516017 /* ObjectMapper.framework in Frameworks */,
+				80E1BD84222275B100516017 /* SVProgressHUD.framework in Frameworks */,
+				80E1BD86222275B900516017 /* netfox_ios.framework in Frameworks */,
+				80E1BD88222275CC00516017 /* ISO8601.framework in Frameworks */,
+				80E1BD8A222275D200516017 /* JSONModel.framework in Frameworks */,
+				80E1BD8C222275DE00516017 /* AFNetworking.framework in Frameworks */,
+				80E1BD7B222273BF00516017 /* Bolts.framework in Frameworks */,
+				80E1BD7C222273BF00516017 /* FBSDKCoreKit.framework in Frameworks */,
+				80E1BD7D222273BF00516017 /* FBSDKLoginKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E1BD5722226FAC00516017 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E1BD6222226FAC00516017 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80E1BD3A22226FAA00516017 = {
+			isa = PBXGroup;
+			children = (
+				80E1BD4522226FAA00516017 /* laguqu-ios */,
+				80E1BD5D22226FAC00516017 /* laguqu-iosTests */,
+				80E1BD6822226FAC00516017 /* laguqu-iosUITests */,
+				80E1BD4422226FAA00516017 /* Products */,
+				80E1BD77222273BF00516017 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		80E1BD4422226FAA00516017 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80E1BD4322226FAA00516017 /* laguqu-ios.app */,
+				80E1BD5A22226FAC00516017 /* laguqu-iosTests.xctest */,
+				80E1BD6522226FAC00516017 /* laguqu-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80E1BD4522226FAA00516017 /* laguqu-ios */ = {
+			isa = PBXGroup;
+			children = (
+				80E1BD8D2222760F00516017 /* Domainless */,
+				80E1BD8E2222761000516017 /* Feature */,
+				80E1BD5022226FAC00516017 /* Assets.xcassets */,
+				80E1BD5522226FAC00516017 /* Info.plist */,
+				80E1BD4D22226FAA00516017 /* laguqu_ios.xcdatamodeld */,
+			);
+			path = "laguqu-ios";
+			sourceTree = "<group>";
+		};
+		80E1BD5D22226FAC00516017 /* laguqu-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				80E1BD5E22226FAC00516017 /* laguqu_iosTests.swift */,
+				80E1BD6022226FAC00516017 /* Info.plist */,
+			);
+			path = "laguqu-iosTests";
+			sourceTree = "<group>";
+		};
+		80E1BD6822226FAC00516017 /* laguqu-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				80E1BD6922226FAC00516017 /* laguqu_iosUITests.swift */,
+				80E1BD6B22226FAC00516017 /* Info.plist */,
+			);
+			path = "laguqu-iosUITests";
+			sourceTree = "<group>";
+		};
+		80E1BD77222273BF00516017 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80E1BD8B222275DE00516017 /* AFNetworking.framework */,
+				80E1BD89222275D200516017 /* JSONModel.framework */,
+				80E1BD87222275CC00516017 /* ISO8601.framework */,
+				80E1BD85222275B900516017 /* netfox_ios.framework */,
+				80E1BD83222275B100516017 /* SVProgressHUD.framework */,
+				80E1BD81222274EF00516017 /* ObjectMapper.framework */,
+				80E1BD7F222274EB00516017 /* SnapKit.framework */,
+				80E1BD78222273BF00516017 /* Bolts.framework */,
+				80E1BD79222273BF00516017 /* FBSDKCoreKit.framework */,
+				80E1BD7A222273BF00516017 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80E1BD8D2222760F00516017 /* Domainless */ = {
+			isa = PBXGroup;
+			children = (
+				80E1BE9A22227A4400516017 /* Utils */,
+				80E1BD95222278F700516017 /* Library */,
+				80E1BD8F2222761400516017 /* ApplicationEntry */,
+			);
+			path = Domainless;
+			sourceTree = "<group>";
+		};
+		80E1BD8E2222761000516017 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				80E1BD902222775500516017 /* SplashScreen */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		80E1BD8F2222761400516017 /* ApplicationEntry */ = {
+			isa = PBXGroup;
+			children = (
+				80E1BD4622226FAA00516017 /* AppDelegate.swift */,
+				80E1BD5222226FAC00516017 /* LaunchScreen.storyboard */,
+			);
+			path = ApplicationEntry;
+			sourceTree = "<group>";
+		};
+		80E1BD902222775500516017 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				80E1BD912222778900516017 /* SplashScreenViewController.swift */,
+				80E1BD922222778900516017 /* SplashScreenViewController.xib */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		80E1BD95222278F700516017 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				80E1BD96222278F700516017 /* MusixMatchSwaggerAPIClient */,
+				80E1BE31222278F700516017 /* VACalendar */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		80E1BD96222278F700516017 /* MusixMatchSwaggerAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				80E1BD97222278F700516017 /* Core */,
+				80E1BDAD222278F700516017 /* Model */,
+				80E1BE24222278F700516017 /* Api */,
+			);
+			path = MusixMatchSwaggerAPIClient;
+			sourceTree = "<group>";
+		};
+		80E1BD97222278F700516017 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				80E1BD98222278F700516017 /* SWGQueryParamCollection.m */,
+				80E1BD99222278F700516017 /* SWGSanitizer.h */,
+				80E1BD9A222278F700516017 /* SWGConfiguration.m */,
+				80E1BD9B222278F700516017 /* SWGLogger.h */,
+				80E1BD9C222278F700516017 /* JSONValueTransformer+ISO8601.h */,
+				80E1BD9D222278F700516017 /* SWGApiClient.h */,
+				80E1BD9E222278F700516017 /* SWGJSONResponseSerializer.m */,
+				80E1BD9F222278F700516017 /* SWGResponseDeserializer.m */,
+				80E1BDA0222278F700516017 /* SWGJSONRequestSerializer.m */,
+				80E1BDA1222278F700516017 /* SWGObject.h */,
+				80E1BDA2222278F700516017 /* SWGLogger.m */,
+				80E1BDA3222278F700516017 /* SWGConfiguration.h */,
+				80E1BDA4222278F700516017 /* SWGSanitizer.m */,
+				80E1BDA5222278F700516017 /* SWGQueryParamCollection.h */,
+				80E1BDA6222278F700516017 /* SWGApi.h */,
+				80E1BDA7222278F700516017 /* SWGApiClient.m */,
+				80E1BDA8222278F700516017 /* JSONValueTransformer+ISO8601.m */,
+				80E1BDA9222278F700516017 /* SWGResponseDeserializer.h */,
+				80E1BDAA222278F700516017 /* SWGJSONResponseSerializer.h */,
+				80E1BDAB222278F700516017 /* SWGJSONRequestSerializer.h */,
+				80E1BDAC222278F700516017 /* SWGObject.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		80E1BDAD222278F700516017 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80E1BDAE222278F700516017 /* SWGInlineResponse2006MessageBodyTrackList.m */,
+				80E1BDAF222278F700516017 /* SWGInlineResponse2008MessageBody.h */,
+				80E1BDB0222278F700516017 /* SWGInlineResponse2007Message.m */,
+				80E1BDB1222278F700516017 /* SWGInlineResponse2007MessageBody.m */,
+				80E1BDB2222278F700516017 /* SWGInlineResponse2006Message.m */,
+				80E1BDB3222278F700516017 /* SWGInlineResponse200MessageHeader.m */,
+				80E1BDB4222278F700516017 /* SWGInlineResponse2001.m */,
+				80E1BDB5222278F700516017 /* SWGInlineResponse2002MessageHeader.m */,
+				80E1BDB6222278F700516017 /* SWGSubtitle.h */,
+				80E1BDB7222278F700516017 /* SWGInlineResponse2007.h */,
+				80E1BDB8222278F700516017 /* SWGTrackSecondaryGenresMusicGenre.h */,
+				80E1BDB9222278F700516017 /* SWGAlbumPrimaryGenresMusicGenreList.m */,
+				80E1BDBA222278F700516017 /* SWGInlineResponse200Message.h */,
+				80E1BDBB222278F700516017 /* SWGInlineResponse20010Message.m */,
+				80E1BDBC222278F700516017 /* SWGInlineResponse2003.h */,
+				80E1BDBD222278F700516017 /* SWGTrackPrimaryGenresMusicGenre.m */,
+				80E1BDBE222278F700516017 /* SWGInlineResponse20010.h */,
+				80E1BDBF222278F700516017 /* SWGInlineResponse2009.h */,
+				80E1BDC0222278F700516017 /* SWGInlineResponse2005MessageHeader.m */,
+				80E1BDC1222278F700516017 /* SWGArtistPrimaryGenres.h */,
+				80E1BDC2222278F700516017 /* SWGInlineResponse2005.m */,
+				80E1BDC3222278F700516017 /* SWGArtistArtistNameTranslationList.m */,
+				80E1BDC4222278F700516017 /* SWGAlbum.h */,
+				80E1BDC5222278F700516017 /* SWGArtistSecondaryGenres.m */,
+				80E1BDC6222278F700516017 /* SWGTrackSecondaryGenres.h */,
+				80E1BDC7222278F700516017 /* SWGTrackPrimaryGenres.m */,
+				80E1BDC8222278F700516017 /* SWGArtistPrimaryGenresMusicGenre.m */,
+				80E1BDC9222278F700516017 /* SWGInlineResponse2001MessageBody.m */,
+				80E1BDCA222278F700516017 /* SWGInlineResponse2006MessageBody.m */,
+				80E1BDCB222278F700516017 /* SWGInlineResponse2005Message.h */,
+				80E1BDCC222278F700516017 /* SWGInlineResponse2004Message.h */,
+				80E1BDCD222278F700516017 /* SWGArtistPrimaryGenresMusicGenreList.h */,
+				80E1BDCE222278F700516017 /* SWGAlbumPrimaryGenres.h */,
+				80E1BDCF222278F700516017 /* SWGArtist.m */,
+				80E1BDD0222278F700516017 /* SWGInlineResponse2001MessageHeader.m */,
+				80E1BDD1222278F700516017 /* SWGInlineResponse2004.h */,
+				80E1BDD2222278F700516017 /* SWGInlineResponse2002.m */,
+				80E1BDD3222278F700516017 /* SWGTrackPrimaryGenresMusicGenreList.h */,
+				80E1BDD4222278F700516017 /* SWGInlineResponse2002Message.h */,
+				80E1BDD5222278F700516017 /* SWGInlineResponse2003Message.h */,
+				80E1BDD6222278F700516017 /* SWGAlbumPrimaryGenresMusicGenre.m */,
+				80E1BDD7222278F700516017 /* SWGInlineResponse2008.m */,
+				80E1BDD8222278F700516017 /* SWGTrackSecondaryGenresMusicGenreList.h */,
+				80E1BDD9222278F700516017 /* SWGInlineResponse2003MessageBody.h */,
+				80E1BDDA222278F700516017 /* SWGInlineResponse2004MessageBody.h */,
+				80E1BDDB222278F700516017 /* SWGInlineResponse2006.m */,
+				80E1BDDC222278F700516017 /* SWGLyrics.h */,
+				80E1BDDD222278F700516017 /* SWGInlineResponse2008Message.h */,
+				80E1BDDE222278F700516017 /* SWGInlineResponse2009Message.h */,
+				80E1BDDF222278F700516017 /* SWGArtistArtistNameTranslation.h */,
+				80E1BDE0222278F700516017 /* SWGInlineResponse200.h */,
+				80E1BDE1222278F700516017 /* SWGInlineResponse2001Message.m */,
+				80E1BDE2222278F700516017 /* SWGArtistArtistCredits.h */,
+				80E1BDE3222278F700516017 /* SWGTrack.h */,
+				80E1BDE4222278F700516017 /* SWGInlineResponse200MessageBody.h */,
+				80E1BDE5222278F700516017 /* SWGInlineResponse20010MessageBody.h */,
+				80E1BDE6222278F700516017 /* SWGInlineResponse2002MessageBody.h */,
+				80E1BDE7222278F700516017 /* SWGArtistArtistAliasList.m */,
+				80E1BDE8222278F700516017 /* SWGSnippet.m */,
+				80E1BDE9222278F700516017 /* SWGInlineResponse2005.h */,
+				80E1BDEA222278F700516017 /* SWGArtistPrimaryGenres.m */,
+				80E1BDEB222278F700516017 /* SWGInlineResponse2005MessageHeader.h */,
+				80E1BDEC222278F700516017 /* SWGInlineResponse2009.m */,
+				80E1BDED222278F700516017 /* SWGInlineResponse20010.m */,
+				80E1BDEE222278F700516017 /* SWGTrackPrimaryGenresMusicGenre.h */,
+				80E1BDEF222278F700516017 /* SWGInlineResponse2003.m */,
+				80E1BDF0222278F700516017 /* SWGInlineResponse200Message.m */,
+				80E1BDF1222278F700516017 /* SWGInlineResponse20010Message.h */,
+				80E1BDF2222278F700516017 /* SWGInlineResponse2007.m */,
+				80E1BDF3222278F700516017 /* SWGTrackSecondaryGenresMusicGenre.m */,
+				80E1BDF4222278F700516017 /* SWGAlbumPrimaryGenresMusicGenreList.h */,
+				80E1BDF5222278F700516017 /* SWGSubtitle.m */,
+				80E1BDF6222278F700516017 /* SWGInlineResponse2002MessageHeader.h */,
+				80E1BDF7222278F700516017 /* SWGInlineResponse200MessageHeader.h */,
+				80E1BDF8222278F700516017 /* SWGInlineResponse2001.h */,
+				80E1BDF9222278F700516017 /* SWGInlineResponse2008MessageBody.m */,
+				80E1BDFA222278F700516017 /* SWGInlineResponse2006MessageBodyTrackList.h */,
+				80E1BDFB222278F700516017 /* SWGInlineResponse2007MessageBody.h */,
+				80E1BDFC222278F700516017 /* SWGInlineResponse2006Message.h */,
+				80E1BDFD222278F700516017 /* SWGInlineResponse2007Message.h */,
+				80E1BDFE222278F700516017 /* SWGArtistPrimaryGenresMusicGenreList.m */,
+				80E1BDFF222278F700516017 /* SWGAlbumPrimaryGenres.m */,
+				80E1BE00222278F700516017 /* SWGInlineResponse2004Message.m */,
+				80E1BE01222278F700516017 /* SWGInlineResponse2005Message.m */,
+				80E1BE02222278F700516017 /* SWGInlineResponse2006MessageBody.h */,
+				80E1BE03222278F700516017 /* SWGInlineResponse2001MessageBody.h */,
+				80E1BE04222278F700516017 /* SWGArtistPrimaryGenresMusicGenre.h */,
+				80E1BE05222278F700516017 /* SWGArtistSecondaryGenres.h */,
+				80E1BE06222278F700516017 /* SWGTrackPrimaryGenres.h */,
+				80E1BE07222278F700516017 /* SWGTrackSecondaryGenres.m */,
+				80E1BE08222278F700516017 /* SWGArtistArtistNameTranslationList.h */,
+				80E1BE09222278F700516017 /* SWGAlbum.m */,
+				80E1BE0A222278F700516017 /* SWGArtistArtistNameTranslation.m */,
+				80E1BE0B222278F700516017 /* SWGInlineResponse2009Message.m */,
+				80E1BE0C222278F700516017 /* SWGInlineResponse2008Message.m */,
+				80E1BE0D222278F700516017 /* SWGInlineResponse2006.h */,
+				80E1BE0E222278F700516017 /* SWGLyrics.m */,
+				80E1BE0F222278F700516017 /* SWGInlineResponse2004MessageBody.m */,
+				80E1BE10222278F700516017 /* SWGTrackSecondaryGenresMusicGenreList.m */,
+				80E1BE11222278F700516017 /* SWGInlineResponse2003MessageBody.m */,
+				80E1BE12222278F700516017 /* SWGAlbumPrimaryGenresMusicGenre.h */,
+				80E1BE13222278F700516017 /* SWGInlineResponse2008.h */,
+				80E1BE14222278F700516017 /* SWGInlineResponse2003Message.m */,
+				80E1BE15222278F700516017 /* SWGInlineResponse2002Message.m */,
+				80E1BE16222278F700516017 /* SWGTrackPrimaryGenresMusicGenreList.m */,
+				80E1BE17222278F700516017 /* SWGInlineResponse2002.h */,
+				80E1BE18222278F700516017 /* SWGInlineResponse2004.m */,
+				80E1BE19222278F700516017 /* SWGInlineResponse2001MessageHeader.h */,
+				80E1BE1A222278F700516017 /* SWGArtist.h */,
+				80E1BE1B222278F700516017 /* SWGArtistArtistAliasList.h */,
+				80E1BE1C222278F700516017 /* SWGSnippet.h */,
+				80E1BE1D222278F700516017 /* SWGInlineResponse2002MessageBody.m */,
+				80E1BE1E222278F700516017 /* SWGInlineResponse20010MessageBody.m */,
+				80E1BE1F222278F700516017 /* SWGInlineResponse200MessageBody.m */,
+				80E1BE20222278F700516017 /* SWGTrack.m */,
+				80E1BE21222278F700516017 /* SWGArtistArtistCredits.m */,
+				80E1BE22222278F700516017 /* SWGInlineResponse2001Message.h */,
+				80E1BE23222278F700516017 /* SWGInlineResponse200.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80E1BE24222278F700516017 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				80E1BE25222278F700516017 /* SWGSubtitleApi.h */,
+				80E1BE26222278F700516017 /* SWGLyricsApi.h */,
+				80E1BE27222278F700516017 /* SWGArtistApi.h */,
+				80E1BE28222278F700516017 /* SWGSnippetApi.h */,
+				80E1BE29222278F700516017 /* SWGTrackApi.m */,
+				80E1BE2A222278F700516017 /* SWGAlbumApi.m */,
+				80E1BE2B222278F700516017 /* SWGLyricsApi.m */,
+				80E1BE2C222278F700516017 /* SWGSubtitleApi.m */,
+				80E1BE2D222278F700516017 /* SWGArtistApi.m */,
+				80E1BE2E222278F700516017 /* SWGAlbumApi.h */,
+				80E1BE2F222278F700516017 /* SWGTrackApi.h */,
+				80E1BE30222278F700516017 /* SWGSnippetApi.m */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		80E1BE31222278F700516017 /* VACalendar */ = {
+			isa = PBXGroup;
+			children = (
+				80E1BE32222278F700516017 /* VAMonthHeaderView.swift */,
+				80E1BE33222278F700516017 /* VAMonth.swift */,
+				80E1BE34222278F700516017 /* VADotView.swift */,
+				80E1BE35222278F700516017 /* VACalendar.swift */,
+				80E1BE36222278F700516017 /* VAWeekView.swift */,
+				80E1BE37222278F700516017 /* VACalendar.h */,
+				80E1BE38222278F700516017 /* VACalendarView.swift */,
+				80E1BE39222278F700516017 /* VAWeekDaysView.swift */,
+				80E1BE3A222278F700516017 /* VAWeek.swift */,
+				80E1BE3B222278F700516017 /* VAFormatters.swift */,
+				80E1BE3C222278F700516017 /* VADayView.swift */,
+				80E1BE3D222278F700516017 /* VADay.swift */,
+				80E1BE3E222278F700516017 /* VAMonthView.swift */,
+				80E1BE3F222278F700516017 /* VACalendarMonthDelegate.swift */,
+				80E1BE40222278F700516017 /* Info.plist */,
+			);
+			path = VACalendar;
+			sourceTree = "<group>";
+		};
+		80E1BE9A22227A4400516017 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				80E1BE9B22227A4400516017 /* Header */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		80E1BE9B22227A4400516017 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				80E1BE9C22227A4400516017 /* BaseProject-Bridging-Header.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80E1BD4222226FAA00516017 /* laguqu-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80E1BD6E22226FAC00516017 /* Build configuration list for PBXNativeTarget "laguqu-ios" */;
+			buildPhases = (
+				80E1BD3F22226FAA00516017 /* Sources */,
+				80E1BD4022226FAA00516017 /* Frameworks */,
+				80E1BD4122226FAA00516017 /* Resources */,
+				80E1BD7E2222743C00516017 /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "laguqu-ios";
+			productName = "laguqu-ios";
+			productReference = 80E1BD4322226FAA00516017 /* laguqu-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80E1BD5922226FAC00516017 /* laguqu-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80E1BD7122226FAC00516017 /* Build configuration list for PBXNativeTarget "laguqu-iosTests" */;
+			buildPhases = (
+				80E1BD5622226FAC00516017 /* Sources */,
+				80E1BD5722226FAC00516017 /* Frameworks */,
+				80E1BD5822226FAC00516017 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80E1BD5C22226FAC00516017 /* PBXTargetDependency */,
+			);
+			name = "laguqu-iosTests";
+			productName = "laguqu-iosTests";
+			productReference = 80E1BD5A22226FAC00516017 /* laguqu-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		80E1BD6422226FAC00516017 /* laguqu-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80E1BD7422226FAC00516017 /* Build configuration list for PBXNativeTarget "laguqu-iosUITests" */;
+			buildPhases = (
+				80E1BD6122226FAC00516017 /* Sources */,
+				80E1BD6222226FAC00516017 /* Frameworks */,
+				80E1BD6322226FAC00516017 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80E1BD6722226FAC00516017 /* PBXTargetDependency */,
+			);
+			name = "laguqu-iosUITests";
+			productName = "laguqu-iosUITests";
+			productReference = 80E1BD6522226FAC00516017 /* laguqu-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80E1BD3B22226FAA00516017 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "-";
+				TargetAttributes = {
+					80E1BD4222226FAA00516017 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					80E1BD5922226FAC00516017 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 80E1BD4222226FAA00516017;
+					};
+					80E1BD6422226FAC00516017 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 80E1BD4222226FAA00516017;
+					};
+				};
+			};
+			buildConfigurationList = 80E1BD3E22226FAA00516017 /* Build configuration list for PBXProject "laguqu-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80E1BD3A22226FAA00516017;
+			productRefGroup = 80E1BD4422226FAA00516017 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80E1BD4222226FAA00516017 /* laguqu-ios */,
+				80E1BD5922226FAC00516017 /* laguqu-iosTests */,
+				80E1BD6422226FAC00516017 /* laguqu-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80E1BD4122226FAA00516017 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E1BD5422226FAC00516017 /* LaunchScreen.storyboard in Resources */,
+				80E1BD942222778900516017 /* SplashScreenViewController.xib in Resources */,
+				80E1BD5122226FAC00516017 /* Assets.xcassets in Resources */,
+				80E1BE99222278F700516017 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E1BD5822226FAC00516017 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E1BD6322226FAC00516017 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		80E1BD7E2222743C00516017 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/netfox_ios.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ISO8601.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/JSONModel.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AFNetworking.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ObjectMapper.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SVProgressHUD.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/netfox_ios.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ISO8601.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/JSONModel.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80E1BD3F22226FAA00516017 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E1BE7D222278F700516017 /* SWGInlineResponse2002Message.m in Sources */,
+				80E1BE55222278F700516017 /* SWGInlineResponse2005MessageHeader.m in Sources */,
+				80E1BE97222278F700516017 /* VAMonthView.swift in Sources */,
+				80E1BE50222278F700516017 /* SWGInlineResponse2001.m in Sources */,
+				80E1BE6C222278F700516017 /* SWGTrackSecondaryGenresMusicGenre.m in Sources */,
+				80E1BE65222278F700516017 /* SWGSnippet.m in Sources */,
+				80E1BE70222278F700516017 /* SWGAlbumPrimaryGenres.m in Sources */,
+				80E1BE88222278F700516017 /* SWGLyricsApi.m in Sources */,
+				80E1BE64222278F700516017 /* SWGArtistArtistAliasList.m in Sources */,
+				80E1BE4A222278F700516017 /* SWGObject.m in Sources */,
+				80E1BE84222278F700516017 /* SWGArtistArtistCredits.m in Sources */,
+				80E1BE41222278F700516017 /* SWGQueryParamCollection.m in Sources */,
+				80E1BE57222278F700516017 /* SWGArtistArtistNameTranslationList.m in Sources */,
+				80E1BE77222278F700516017 /* SWGInlineResponse2008Message.m in Sources */,
+				80E1BE47222278F700516017 /* SWGSanitizer.m in Sources */,
+				80E1BE7E222278F700516017 /* SWGTrackPrimaryGenresMusicGenreList.m in Sources */,
+				80E1BE45222278F700516017 /* SWGJSONRequestSerializer.m in Sources */,
+				80E1BE59222278F700516017 /* SWGTrackPrimaryGenres.m in Sources */,
+				80E1BE80222278F700516017 /* SWGInlineResponse2002MessageBody.m in Sources */,
+				80E1BE6B222278F700516017 /* SWGInlineResponse2007.m in Sources */,
+				80E1BE8C222278F700516017 /* VAMonthHeaderView.swift in Sources */,
+				80E1BE92222278F700516017 /* VAWeekDaysView.swift in Sources */,
+				80E1BE48222278F700516017 /* SWGApiClient.m in Sources */,
+				80E1BE76222278F700516017 /* SWGInlineResponse2009Message.m in Sources */,
+				80E1BE7F222278F700516017 /* SWGInlineResponse2004.m in Sources */,
+				80E1BE53222278F700516017 /* SWGInlineResponse20010Message.m in Sources */,
+				80E1BE78222278F700516017 /* SWGLyrics.m in Sources */,
+				80E1BE7B222278F700516017 /* SWGInlineResponse2003MessageBody.m in Sources */,
+				80E1BE4B222278F700516017 /* SWGInlineResponse2006MessageBodyTrackList.m in Sources */,
+				80E1BE4C222278F700516017 /* SWGInlineResponse2007Message.m in Sources */,
+				80E1BE60222278F700516017 /* SWGAlbumPrimaryGenresMusicGenre.m in Sources */,
+				80E1BE5B222278F700516017 /* SWGInlineResponse2001MessageBody.m in Sources */,
+				80E1BE8F222278F700516017 /* VACalendar.swift in Sources */,
+				80E1BE51222278F700516017 /* SWGInlineResponse2002MessageHeader.m in Sources */,
+				80E1BE96222278F700516017 /* VADay.swift in Sources */,
+				80E1BE6E222278F700516017 /* SWGInlineResponse2008MessageBody.m in Sources */,
+				80E1BE69222278F700516017 /* SWGInlineResponse2003.m in Sources */,
+				80E1BE89222278F700516017 /* SWGSubtitleApi.m in Sources */,
+				80E1BE8A222278F700516017 /* SWGArtistApi.m in Sources */,
+				80E1BE58222278F700516017 /* SWGArtistSecondaryGenres.m in Sources */,
+				80E1BE8E222278F700516017 /* VADotView.swift in Sources */,
+				80E1BE6D222278F700516017 /* SWGSubtitle.m in Sources */,
+				80E1BE52222278F700516017 /* SWGAlbumPrimaryGenresMusicGenreList.m in Sources */,
+				80E1BE54222278F700516017 /* SWGTrackPrimaryGenresMusicGenre.m in Sources */,
+				80E1BE62222278F700516017 /* SWGInlineResponse2006.m in Sources */,
+				80E1BE67222278F700516017 /* SWGInlineResponse2009.m in Sources */,
+				80E1BE93222278F700516017 /* VAWeek.swift in Sources */,
+				80E1BE7A222278F700516017 /* SWGTrackSecondaryGenresMusicGenreList.m in Sources */,
+				80E1BE90222278F700516017 /* VAWeekView.swift in Sources */,
+				80E1BE98222278F700516017 /* VACalendarMonthDelegate.swift in Sources */,
+				80E1BE7C222278F700516017 /* SWGInlineResponse2003Message.m in Sources */,
+				80E1BE61222278F700516017 /* SWGInlineResponse2008.m in Sources */,
+				80E1BE66222278F700516017 /* SWGArtistPrimaryGenres.m in Sources */,
+				80E1BE94222278F700516017 /* VAFormatters.swift in Sources */,
+				80E1BD4722226FAA00516017 /* AppDelegate.swift in Sources */,
+				80E1BE5C222278F700516017 /* SWGInlineResponse2006MessageBody.m in Sources */,
+				80E1BE6A222278F700516017 /* SWGInlineResponse200Message.m in Sources */,
+				80E1BE4E222278F700516017 /* SWGInlineResponse2006Message.m in Sources */,
+				80E1BE5F222278F700516017 /* SWGInlineResponse2002.m in Sources */,
+				80E1BE72222278F700516017 /* SWGInlineResponse2005Message.m in Sources */,
+				80E1BE5E222278F700516017 /* SWGInlineResponse2001MessageHeader.m in Sources */,
+				80E1BE49222278F700516017 /* JSONValueTransformer+ISO8601.m in Sources */,
+				80E1BE85222278F700516017 /* SWGInlineResponse200.m in Sources */,
+				80E1BE8B222278F700516017 /* SWGSnippetApi.m in Sources */,
+				80E1BE43222278F700516017 /* SWGJSONResponseSerializer.m in Sources */,
+				80E1BE4F222278F700516017 /* SWGInlineResponse200MessageHeader.m in Sources */,
+				80E1BE68222278F700516017 /* SWGInlineResponse20010.m in Sources */,
+				80E1BE4D222278F700516017 /* SWGInlineResponse2007MessageBody.m in Sources */,
+				80E1BE8D222278F700516017 /* VAMonth.swift in Sources */,
+				80E1BE83222278F700516017 /* SWGTrack.m in Sources */,
+				80E1BE5D222278F700516017 /* SWGArtist.m in Sources */,
+				80E1BD932222778900516017 /* SplashScreenViewController.swift in Sources */,
+				80E1BE87222278F700516017 /* SWGAlbumApi.m in Sources */,
+				80E1BE95222278F700516017 /* VADayView.swift in Sources */,
+				80E1BE86222278F700516017 /* SWGTrackApi.m in Sources */,
+				80E1BE42222278F700516017 /* SWGConfiguration.m in Sources */,
+				80E1BE91222278F700516017 /* VACalendarView.swift in Sources */,
+				80E1BE63222278F700516017 /* SWGInlineResponse2001Message.m in Sources */,
+				80E1BE74222278F700516017 /* SWGAlbum.m in Sources */,
+				80E1BE75222278F700516017 /* SWGArtistArtistNameTranslation.m in Sources */,
+				80E1BE6F222278F700516017 /* SWGArtistPrimaryGenresMusicGenreList.m in Sources */,
+				80E1BE79222278F700516017 /* SWGInlineResponse2004MessageBody.m in Sources */,
+				80E1BE71222278F700516017 /* SWGInlineResponse2004Message.m in Sources */,
+				80E1BD4F22226FAA00516017 /* laguqu_ios.xcdatamodeld in Sources */,
+				80E1BE73222278F700516017 /* SWGTrackSecondaryGenres.m in Sources */,
+				80E1BE81222278F700516017 /* SWGInlineResponse20010MessageBody.m in Sources */,
+				80E1BE44222278F700516017 /* SWGResponseDeserializer.m in Sources */,
+				80E1BE5A222278F700516017 /* SWGArtistPrimaryGenresMusicGenre.m in Sources */,
+				80E1BE56222278F700516017 /* SWGInlineResponse2005.m in Sources */,
+				80E1BE82222278F700516017 /* SWGInlineResponse200MessageBody.m in Sources */,
+				80E1BE46222278F700516017 /* SWGLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E1BD5622226FAC00516017 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E1BD5F22226FAC00516017 /* laguqu_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E1BD6122226FAC00516017 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E1BD6A22226FAC00516017 /* laguqu_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80E1BD5C22226FAC00516017 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80E1BD4222226FAA00516017 /* laguqu-ios */;
+			targetProxy = 80E1BD5B22226FAC00516017 /* PBXContainerItemProxy */;
+		};
+		80E1BD6722226FAC00516017 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80E1BD4222226FAA00516017 /* laguqu-ios */;
+			targetProxy = 80E1BD6622226FAC00516017 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80E1BD5222226FAC00516017 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80E1BD5322226FAC00516017 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80E1BD6C22226FAC00516017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		80E1BD6D22226FAC00516017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80E1BD6F22226FAC00516017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8K928G76ZY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "laguqu-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "id.test.bangiki.laguqu-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "laguqu-ios/Domainless/Utils/Header/BaseProject-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		80E1BD7022226FAC00516017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8K928G76ZY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "laguqu-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "id.test.bangiki.laguqu-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "laguqu-ios/Domainless/Utils/Header/BaseProject-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		80E1BD7222226FAC00516017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8K928G76ZY;
+				INFOPLIST_FILE = "laguqu-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "id.test.bangiki.laguqu-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/laguqu-ios.app/laguqu-ios";
+			};
+			name = Debug;
+		};
+		80E1BD7322226FAC00516017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8K928G76ZY;
+				INFOPLIST_FILE = "laguqu-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "id.test.bangiki.laguqu-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/laguqu-ios.app/laguqu-ios";
+			};
+			name = Release;
+		};
+		80E1BD7522226FAC00516017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8K928G76ZY;
+				INFOPLIST_FILE = "laguqu-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "id.test.bangiki.laguqu-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "laguqu-ios";
+			};
+			name = Debug;
+		};
+		80E1BD7622226FAC00516017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8K928G76ZY;
+				INFOPLIST_FILE = "laguqu-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "id.test.bangiki.laguqu-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "laguqu-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80E1BD3E22226FAA00516017 /* Build configuration list for PBXProject "laguqu-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E1BD6C22226FAC00516017 /* Debug */,
+				80E1BD6D22226FAC00516017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80E1BD6E22226FAC00516017 /* Build configuration list for PBXNativeTarget "laguqu-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E1BD6F22226FAC00516017 /* Debug */,
+				80E1BD7022226FAC00516017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80E1BD7122226FAC00516017 /* Build configuration list for PBXNativeTarget "laguqu-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E1BD7222226FAC00516017 /* Debug */,
+				80E1BD7322226FAC00516017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80E1BD7422226FAC00516017 /* Build configuration list for PBXNativeTarget "laguqu-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E1BD7522226FAC00516017 /* Debug */,
+				80E1BD7622226FAC00516017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		80E1BD4D22226FAA00516017 /* laguqu_ios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				80E1BD4E22226FAA00516017 /* laguqu_ios.xcdatamodel */,
+			);
+			currentVersion = 80E1BD4E22226FAA00516017 /* laguqu_ios.xcdatamodel */;
+			path = laguqu_ios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 80E1BD3B22226FAA00516017 /* Project object */;
+}
