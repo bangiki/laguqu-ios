@@ -34,6 +34,9 @@
 		805DB7BE2222C4A800C60348 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7BD2222C4A800C60348 /* UIFont.swift */; };
 		805DB7C32222CB5700C60348 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7C12222CB5700C60348 /* LogoutViewController.swift */; };
 		805DB7C42222CB5700C60348 /* LogoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7C22222CB5700C60348 /* LogoutViewController.xib */; };
+		805DB7CB2222D3B300C60348 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7CA2222D3B300C60348 /* Artist.swift */; };
+		805DB7CF2222D4D800C60348 /* ArtisAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7CD2222D4D800C60348 /* ArtisAlbumCell.xib */; };
+		805DB7D02222D4D800C60348 /* ArtisAlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7CE2222D4D800C60348 /* ArtisAlbumCell.swift */; };
 		80E1BD4722226FAA00516017 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BD4622226FAA00516017 /* AppDelegate.swift */; };
 		80E1BD4F22226FAA00516017 /* laguqu_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BD4D22226FAA00516017 /* laguqu_ios.xcdatamodeld */; };
 		80E1BD5122226FAC00516017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E1BD5022226FAC00516017 /* Assets.xcassets */; };
@@ -189,6 +192,9 @@
 		805DB7BD2222C4A800C60348 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		805DB7C12222CB5700C60348 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		805DB7C22222CB5700C60348 /* LogoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoutViewController.xib; sourceTree = "<group>"; };
+		805DB7CA2222D3B300C60348 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		805DB7CD2222D4D800C60348 /* ArtisAlbumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArtisAlbumCell.xib; sourceTree = "<group>"; };
+		805DB7CE2222D4D800C60348 /* ArtisAlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtisAlbumCell.swift; sourceTree = "<group>"; };
 		80E1BD4322226FAA00516017 /* laguqu-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "laguqu-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E1BD4622226FAA00516017 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80E1BD4E22226FAA00516017 /* laguqu_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = laguqu_ios.xcdatamodel; sourceTree = "<group>"; };
@@ -496,6 +502,8 @@
 		805DB7A22222C0DD00C60348 /* FindLyrics */ = {
 			isa = PBXGroup;
 			children = (
+				805DB7CC2222D4D800C60348 /* Cell */,
+				805DB7C92222D3A500C60348 /* Model */,
 				805DB7C82222CBA700C60348 /* ViewController */,
 			);
 			path = FindLyrics;
@@ -585,6 +593,23 @@
 				805DB7A72222C15C00C60348 /* FindLyricsViewController.xib */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		805DB7C92222D3A500C60348 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7CA2222D3B300C60348 /* Artist.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		805DB7CC2222D4D800C60348 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7CD2222D4D800C60348 /* ArtisAlbumCell.xib */,
+				805DB7CE2222D4D800C60348 /* ArtisAlbumCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		80E1BD3A22226FAA00516017 = {
@@ -1052,6 +1077,7 @@
 				805DB7942222BA5A00C60348 /* Poppins-Bold.ttf in Resources */,
 				805DB7902222BA5A00C60348 /* Poppins-Medium.ttf in Resources */,
 				805DB7B12222C18500C60348 /* WishlistViewController.xib in Resources */,
+				805DB7CF2222D4D800C60348 /* ArtisAlbumCell.xib in Resources */,
 				805DB7932222BA5A00C60348 /* Poppins-Regular.ttf in Resources */,
 				80E1BD5122226FAC00516017 /* Assets.xcassets in Resources */,
 				805DB7A92222C15C00C60348 /* FindLyricsViewController.xib in Resources */,
@@ -1126,6 +1152,7 @@
 				80E1BE41222278F700516017 /* SWGQueryParamCollection.m in Sources */,
 				80E1BE57222278F700516017 /* SWGArtistArtistNameTranslationList.m in Sources */,
 				80E1BE77222278F700516017 /* SWGInlineResponse2008Message.m in Sources */,
+				805DB7D02222D4D800C60348 /* ArtisAlbumCell.swift in Sources */,
 				80E1BE47222278F700516017 /* SWGSanitizer.m in Sources */,
 				80E1BE7E222278F700516017 /* SWGTrackPrimaryGenresMusicGenreList.m in Sources */,
 				80E1BE45222278F700516017 /* SWGJSONRequestSerializer.m in Sources */,
@@ -1159,6 +1186,7 @@
 				80E1BE54222278F700516017 /* SWGTrackPrimaryGenresMusicGenre.m in Sources */,
 				80E1BE62222278F700516017 /* SWGInlineResponse2006.m in Sources */,
 				805DB7BC2222C3F700C60348 /* UIViewController.swift in Sources */,
+				805DB7CB2222D3B300C60348 /* Artist.swift in Sources */,
 				80E1BE67222278F700516017 /* SWGInlineResponse2009.m in Sources */,
 				80E1BE93222278F700516017 /* VAWeek.swift in Sources */,
 				805DB7AC2222C16E00C60348 /* CalendarViewController.swift in Sources */,
