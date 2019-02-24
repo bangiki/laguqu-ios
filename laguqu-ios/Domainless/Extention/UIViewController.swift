@@ -10,6 +10,7 @@ import Foundation
 
 enum NavigationBarType {
   case title
+  case detailTitle
 }
 
 extension UIViewController {
@@ -19,6 +20,10 @@ extension UIViewController {
     
     switch type {
     case .title:
+      navbarSolidColor()
+      titleStyle()
+    case .detailTitle:
+      backButton()
       navbarSolidColor()
       titleStyle()
     }
@@ -42,4 +47,27 @@ extension UIViewController {
       navigationController?.navigationBar.titleTextAttributes = textAttributes
     }
   }
+  
+  private func backButton(){
+    let imgBack = UIImage(named: "ic_back")
+    
+    navigationController?.navigationBar.backIndicatorImage = imgBack
+    navigationController?.navigationBar.backIndicatorTransitionMaskImage = imgBack
+    
+    navigationItem.leftItemsSupplementBackButton = true
+    
+    let barBackButton = UIBarButtonItem(title: "", style: .plain, target: self, action: #selector(self.back))
+    barBackButton.tintColor = .white
+    
+    navigationController?.navigationBar.topItem?.backBarButtonItem = barBackButton
+  }
+  
+  @objc func back() {
+    if navigationController?.viewControllers.first == self {
+      dismiss(animated: true, completion: nil)
+    } else {
+      navigationController?.popViewController(animated: true)
+    }
+  }
+  
 }

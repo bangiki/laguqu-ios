@@ -161,7 +161,7 @@ extension CalendarViewController: VADayViewAppearanceDelegate {
 
 extension CalendarViewController: VACalendarViewDelegate {
   func selectedDate(_ date: Date) {
-    //let nav = DetailViewController()
-    //navigationController?.pushViewController(nav, animated: true)
+    let nav = DetailCalendarViewController()
+    navigationController?.pushViewController(nav, animated: true)
   }
 }

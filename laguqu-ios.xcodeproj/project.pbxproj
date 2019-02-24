@@ -37,6 +37,10 @@
 		805DB7CB2222D3B300C60348 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7CA2222D3B300C60348 /* Artist.swift */; };
 		805DB7CF2222D4D800C60348 /* ArtisAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7CD2222D4D800C60348 /* ArtisAlbumCell.xib */; };
 		805DB7D02222D4D800C60348 /* ArtisAlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7CE2222D4D800C60348 /* ArtisAlbumCell.swift */; };
+		805DB7D52222DE5F00C60348 /* DetailCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7D32222DE5F00C60348 /* DetailCalendarViewController.swift */; };
+		805DB7D62222DE5F00C60348 /* DetailCalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7D42222DE5F00C60348 /* DetailCalendarViewController.xib */; };
+		805DB7DA2222E1D500C60348 /* EventCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7D82222E1D500C60348 /* EventCalendarCell.swift */; };
+		805DB7DB2222E1D500C60348 /* EventCalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7D92222E1D500C60348 /* EventCalendarCell.xib */; };
 		80E1BD4722226FAA00516017 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BD4622226FAA00516017 /* AppDelegate.swift */; };
 		80E1BD4F22226FAA00516017 /* laguqu_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BD4D22226FAA00516017 /* laguqu_ios.xcdatamodeld */; };
 		80E1BD5122226FAC00516017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E1BD5022226FAC00516017 /* Assets.xcassets */; };
@@ -195,6 +199,10 @@
 		805DB7CA2222D3B300C60348 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		805DB7CD2222D4D800C60348 /* ArtisAlbumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArtisAlbumCell.xib; sourceTree = "<group>"; };
 		805DB7CE2222D4D800C60348 /* ArtisAlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtisAlbumCell.swift; sourceTree = "<group>"; };
+		805DB7D32222DE5F00C60348 /* DetailCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCalendarViewController.swift; sourceTree = "<group>"; };
+		805DB7D42222DE5F00C60348 /* DetailCalendarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCalendarViewController.xib; sourceTree = "<group>"; };
+		805DB7D82222E1D500C60348 /* EventCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCalendarCell.swift; sourceTree = "<group>"; };
+		805DB7D92222E1D500C60348 /* EventCalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCalendarCell.xib; sourceTree = "<group>"; };
 		80E1BD4322226FAA00516017 /* laguqu-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "laguqu-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E1BD4622226FAA00516017 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80E1BD4E22226FAA00516017 /* laguqu_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = laguqu_ios.xcdatamodel; sourceTree = "<group>"; };
@@ -612,6 +620,33 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		805DB7D12222DE2000C60348 /* DetailCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7D72222E17A00C60348 /* Cell */,
+				805DB7D22222DE3B00C60348 /* ViewController */,
+			);
+			path = DetailCalendar;
+			sourceTree = "<group>";
+		};
+		805DB7D22222DE3B00C60348 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7D32222DE5F00C60348 /* DetailCalendarViewController.swift */,
+				805DB7D42222DE5F00C60348 /* DetailCalendarViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		805DB7D72222E17A00C60348 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7D82222E1D500C60348 /* EventCalendarCell.swift */,
+				805DB7D92222E1D500C60348 /* EventCalendarCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		80E1BD3A22226FAA00516017 = {
 			isa = PBXGroup;
 			children = (
@@ -698,6 +733,7 @@
 				805DB7BF2222CB3B00C60348 /* Logout */,
 				805DB7A52222C0F900C60348 /* CreateEvent */,
 				805DB7A42222C0ED00C60348 /* Wishlist */,
+				805DB7D12222DE2000C60348 /* DetailCalendar */,
 				805DB7A32222C0E600C60348 /* Calendar */,
 				805DB7A22222C0DD00C60348 /* FindLyrics */,
 				805DB7982222BF7300C60348 /* HomeTabBar */,
@@ -1062,7 +1098,9 @@
 			files = (
 				805DB7972222BA5A00C60348 /* Poppins-SemiBold.ttf in Resources */,
 				805DB79D2222BF9200C60348 /* HomeTabBarViewController.xib in Resources */,
+				805DB7DB2222E1D500C60348 /* EventCalendarCell.xib in Resources */,
 				805DB7AD2222C16E00C60348 /* CalendarViewController.xib in Resources */,
+				805DB7D62222DE5F00C60348 /* DetailCalendarViewController.xib in Resources */,
 				805DB7B52222C19C00C60348 /* CreateEventViewController.xib in Resources */,
 				805DB7922222BA5A00C60348 /* OFL.txt in Resources */,
 				805DB7962222BA5A00C60348 /* Poppins-Thin.ttf in Resources */,
@@ -1140,6 +1178,7 @@
 				805DB7B02222C18500C60348 /* WishlistViewController.swift in Sources */,
 				80E1BE7D222278F700516017 /* SWGInlineResponse2002Message.m in Sources */,
 				80E1BE55222278F700516017 /* SWGInlineResponse2005MessageHeader.m in Sources */,
+				805DB7DA2222E1D500C60348 /* EventCalendarCell.swift in Sources */,
 				80E1BE97222278F700516017 /* VAMonthView.swift in Sources */,
 				80E1BE50222278F700516017 /* SWGInlineResponse2001.m in Sources */,
 				80E1BE6C222278F700516017 /* SWGTrackSecondaryGenresMusicGenre.m in Sources */,
@@ -1166,6 +1205,7 @@
 				80E1BE76222278F700516017 /* SWGInlineResponse2009Message.m in Sources */,
 				80E1BE7F222278F700516017 /* SWGInlineResponse2004.m in Sources */,
 				80E1BE53222278F700516017 /* SWGInlineResponse20010Message.m in Sources */,
+				805DB7D52222DE5F00C60348 /* DetailCalendarViewController.swift in Sources */,
 				80E1BE78222278F700516017 /* SWGLyrics.m in Sources */,
 				80E1BE7B222278F700516017 /* SWGInlineResponse2003MessageBody.m in Sources */,
 				80E1BE4B222278F700516017 /* SWGInlineResponse2006MessageBodyTrackList.m in Sources */,

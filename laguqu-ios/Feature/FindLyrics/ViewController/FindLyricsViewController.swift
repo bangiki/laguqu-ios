@@ -77,7 +77,6 @@ class FindLyricsViewController: UIViewController {
   
 }
 
-
 extension FindLyricsViewController: UITableViewDelegate {
   
 }

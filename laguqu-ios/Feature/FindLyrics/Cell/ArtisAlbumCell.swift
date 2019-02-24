@@ -28,7 +28,6 @@ class ArtisAlbumCell: UITableViewCell {
   }
   
   private func updateContent(){
-    print("item artist \(item)")
     self.nameArtist.text = item?.artistName
     guard let rating = item?.artistRating else {
       return
