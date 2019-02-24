@@ -11,7 +11,7 @@ import UIKit
 class EventCalendarCell: UITableViewCell {
   
   static let identifier = "EventCalendarCell"
-  static let height : CGFloat = 85
+  static let height : CGFloat = 87
   
   @IBOutlet weak var icon: UIImageView!
   @IBOutlet weak var eventName: UILabel!

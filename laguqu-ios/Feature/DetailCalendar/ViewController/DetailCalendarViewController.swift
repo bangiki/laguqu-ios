@@ -31,7 +31,7 @@ class DetailCalendarViewController: UIViewController {
   
   private func populateData(){
     artistList = [Artist(id: 1, name: "Event Family Gathering 2019", rating: 10),
-                  Artist(id: 1, name: "Event Family Gathering 2019", rating: 10),
+                  Artist(id: 1, name: "Event Family Gathering 2019, Event Family Gathering 2019, Event Family Gathering 2019, Event Family Gathering 2019,", rating: 10),
                   Artist(id: 1, name: "Event Family Gathering 2019", rating: 10)]
   }
   

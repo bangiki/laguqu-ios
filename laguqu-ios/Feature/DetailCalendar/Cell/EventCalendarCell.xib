@@ -20,7 +20,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="KGk-i7-Jjw" customClass="EventCalendarCell" customModule="laguqu_ios" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="EventCalendarCell" customModule="laguqu_ios" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -31,20 +31,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="86.5"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="stv-uH-S9o">
-                                <rect key="frame" x="16" y="16" width="44" height="44"/>
+                                <rect key="frame" x="12" y="10" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="T7S-Gj-nTB"/>
                                     <constraint firstAttribute="height" constant="44" id="jna-wo-WED"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secondhand Serenade feat. Veronica Ballestrini" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2K-gC-fwK">
-                                <rect key="frame" x="76" y="10" width="228" height="45"/>
+                                <rect key="frame" x="68" y="10" width="236" height="45"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins Medium" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pq9-Xl-XmY">
-                                <rect key="frame" x="76" y="59" width="29.5" height="15.5"/>
+                                <rect key="frame" x="68" y="59" width="29.5" height="15.5"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="11"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -53,13 +53,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="r2K-gC-fwK" secondAttribute="trailing" constant="16" id="Ra7-xS-9yc"/>
-                            <constraint firstItem="stv-uH-S9o" firstAttribute="top" secondItem="Xy4-ou-R9l" secondAttribute="top" constant="16" id="UNE-FV-NWZ"/>
+                            <constraint firstItem="stv-uH-S9o" firstAttribute="top" secondItem="Xy4-ou-R9l" secondAttribute="top" constant="10" id="UNE-FV-NWZ"/>
                             <constraint firstItem="Pq9-Xl-XmY" firstAttribute="top" secondItem="r2K-gC-fwK" secondAttribute="bottom" constant="4" id="V0D-V0-jC5"/>
-                            <constraint firstItem="u20-hK-od0" firstAttribute="bottom" secondItem="stv-uH-S9o" secondAttribute="bottom" constant="26.5" id="Wbi-QG-CFp"/>
                             <constraint firstItem="r2K-gC-fwK" firstAttribute="top" secondItem="u20-hK-od0" secondAttribute="top" constant="10" id="Xud-Ob-RVf"/>
-                            <constraint firstItem="r2K-gC-fwK" firstAttribute="leading" secondItem="stv-uH-S9o" secondAttribute="trailing" constant="16" id="cFJ-Jf-sNi"/>
-                            <constraint firstItem="stv-uH-S9o" firstAttribute="leading" secondItem="Xy4-ou-R9l" secondAttribute="leading" constant="16" id="gc6-XU-Iz6"/>
-                            <constraint firstItem="Pq9-Xl-XmY" firstAttribute="leading" secondItem="stv-uH-S9o" secondAttribute="trailing" constant="16" id="h0U-Wq-BJO"/>
+                            <constraint firstItem="r2K-gC-fwK" firstAttribute="leading" secondItem="stv-uH-S9o" secondAttribute="trailing" constant="12" id="cFJ-Jf-sNi"/>
+                            <constraint firstItem="stv-uH-S9o" firstAttribute="leading" secondItem="Xy4-ou-R9l" secondAttribute="leading" constant="12" id="gc6-XU-Iz6"/>
+                            <constraint firstItem="Pq9-Xl-XmY" firstAttribute="leading" secondItem="stv-uH-S9o" secondAttribute="trailing" constant="12" id="h0U-Wq-BJO"/>
+                            <constraint firstItem="u20-hK-od0" firstAttribute="bottom" secondItem="Pq9-Xl-XmY" secondAttribute="bottom" constant="12" id="o1U-k8-Zmd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="u20-hK-od0"/>
                     </view>
@@ -77,7 +77,7 @@
                 <outlet property="eventName" destination="r2K-gC-fwK" id="1b2-GC-dIA"/>
                 <outlet property="icon" destination="stv-uH-S9o" id="RGW-Wk-k5R"/>
             </connections>
-            <point key="canvasLocation" x="64" y="64.5"/>
+            <point key="canvasLocation" x="64" y="62"/>
         </tableViewCell>
     </objects>
 </document>
