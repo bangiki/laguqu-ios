@@ -54,6 +54,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhb-In-zhD">
                                             <rect key="frame" x="58.5" y="541.5" width="258" height="50"/>
                                             <state key="normal" backgroundImage="btn_login_fb"/>
+                                            <connections>
+                                                <action selector="tapToLoginWithFacebook:" destination="-1" eventType="touchUpInside" id="2r0-kb-LkM"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>

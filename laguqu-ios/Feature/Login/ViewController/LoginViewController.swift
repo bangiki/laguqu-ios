@@ -29,10 +29,13 @@ class LoginViewController: UIViewController {
     setNeedsStatusBarAppearanceUpdate()
   }
   
+  @IBAction func tapToLoginWithFacebook(_ sender: UIButton) {
+    let home = HomeTabBarViewController()
+    navigationController?.pushViewController(home, animated: true)
+  }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
   
 }

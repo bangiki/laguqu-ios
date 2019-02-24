@@ -7,6 +7,7 @@
 
 #import <CommonCrypto/CommonCrypto.h>
 #import <UIKit/UIKit.h>
+#import "AHKNavigationController.h"
 #import "SWGApiClient.h"
 #import "SWGAlbumApi.h"
 #import "SWGArtistApi.h"
