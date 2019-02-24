@@ -1,13 +1,28 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateEventViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateEventViewController" customModule="laguqu_ios" customModuleProvider="target">
             <connections>
+                <outlet property="btnSaveEvent" destination="Fnf-AC-pVQ" id="gRl-3x-v44"/>
+                <outlet property="scrollView" destination="4iQ-Fv-kh5" id="ZtF-bz-LY5"/>
+                <outlet property="txtDateEvent" destination="0lI-3Y-TAf" id="XU7-69-K4V"/>
+                <outlet property="txtNameEvent" destination="Pbh-oN-sq2" id="WR8-cW-vzE"/>
+                <outlet property="vFormEvent" destination="bB2-Sg-7Wn" id="DHm-gf-nZp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,8 +30,117 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4iQ-Fv-kh5">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P73-bU-BKb">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="302"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bB2-Sg-7Wn" customClass="UIControl">
+                                    <rect key="frame" x="16" y="16" width="343" height="270"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iah-Jt-w6E">
+                                            <rect key="frame" x="20" y="20" width="41" height="24"/>
+                                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins Medium" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="please input your date event" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0lI-3Y-TAf" customClass="GeneralTextField" customModule="laguqu_ios" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="48" width="311" height="40"/>
+                                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="FEz-5x-lsQ"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdt-rN-gAo">
+                                            <rect key="frame" x="20" y="104" width="52" height="24"/>
+                                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins Medium" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="please input your event" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pbh-oN-sq2" customClass="GeneralTextField" customModule="laguqu_ios" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="132" width="311" height="40"/>
+                                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="u3H-hR-zFV"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnf-AC-pVQ">
+                                            <rect key="frame" x="16" y="204" width="311" height="50"/>
+                                            <color key="backgroundColor" name="nav_primary"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="cTO-0j-Htq"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins Medium" pointSize="15"/>
+                                            <state key="normal" title="Save Your Event">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="tapToSaveEvent:" destination="-1" eventType="touchUpInside" id="xqA-jj-TTy"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="0lI-3Y-TAf" firstAttribute="leading" secondItem="bB2-Sg-7Wn" secondAttribute="leading" constant="16" id="0fE-5c-4dY"/>
+                                        <constraint firstItem="Pbh-oN-sq2" firstAttribute="leading" secondItem="bB2-Sg-7Wn" secondAttribute="leading" constant="16" id="70y-2P-lqs"/>
+                                        <constraint firstItem="Fnf-AC-pVQ" firstAttribute="top" secondItem="Pbh-oN-sq2" secondAttribute="bottom" constant="32" id="7Bg-ef-24h"/>
+                                        <constraint firstItem="rdt-rN-gAo" firstAttribute="top" secondItem="0lI-3Y-TAf" secondAttribute="bottom" constant="16" id="ACt-zl-0Zm"/>
+                                        <constraint firstItem="iah-Jt-w6E" firstAttribute="leading" secondItem="bB2-Sg-7Wn" secondAttribute="leading" constant="20" id="BnP-9K-wIw"/>
+                                        <constraint firstItem="Pbh-oN-sq2" firstAttribute="top" secondItem="rdt-rN-gAo" secondAttribute="bottom" constant="4" id="Ejl-6b-4Pl"/>
+                                        <constraint firstAttribute="bottom" secondItem="Fnf-AC-pVQ" secondAttribute="bottom" constant="16" id="SoX-GX-fIb"/>
+                                        <constraint firstAttribute="trailing" secondItem="Fnf-AC-pVQ" secondAttribute="trailing" constant="16" id="T5C-EB-9Wm"/>
+                                        <constraint firstItem="iah-Jt-w6E" firstAttribute="top" secondItem="bB2-Sg-7Wn" secondAttribute="top" constant="20" id="Zz3-xp-JuB"/>
+                                        <constraint firstAttribute="trailing" secondItem="0lI-3Y-TAf" secondAttribute="trailing" constant="16" id="d20-3i-7Q6"/>
+                                        <constraint firstItem="Fnf-AC-pVQ" firstAttribute="leading" secondItem="bB2-Sg-7Wn" secondAttribute="leading" constant="16" id="fzD-sI-ruS"/>
+                                        <constraint firstAttribute="trailing" secondItem="Pbh-oN-sq2" secondAttribute="trailing" constant="16" id="kKI-Dv-yBw"/>
+                                        <constraint firstItem="rdt-rN-gAo" firstAttribute="leading" secondItem="bB2-Sg-7Wn" secondAttribute="leading" constant="20" id="lZ1-48-ete"/>
+                                        <constraint firstItem="0lI-3Y-TAf" firstAttribute="top" secondItem="iah-Jt-w6E" secondAttribute="bottom" constant="4" id="r55-WU-VYf"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="hideKeyboard:" destination="-1" eventType="touchUpInside" id="XDE-Md-6KU"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="bB2-Sg-7Wn" firstAttribute="top" secondItem="P73-bU-BKb" secondAttribute="top" constant="16" id="4FP-Wn-ZQf"/>
+                                <constraint firstAttribute="bottom" secondItem="bB2-Sg-7Wn" secondAttribute="bottom" constant="16" id="8Wg-nG-e8N"/>
+                                <constraint firstItem="bB2-Sg-7Wn" firstAttribute="leading" secondItem="P73-bU-BKb" secondAttribute="leading" constant="16" id="LY0-AP-ffR"/>
+                                <constraint firstAttribute="trailing" secondItem="bB2-Sg-7Wn" secondAttribute="trailing" constant="16" id="M4e-O4-ScY"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="P73-bU-BKb" firstAttribute="top" secondItem="4iQ-Fv-kh5" secondAttribute="top" id="6Dr-No-SSX"/>
+                        <constraint firstAttribute="bottom" secondItem="P73-bU-BKb" secondAttribute="bottom" id="Gl8-uP-4o3"/>
+                        <constraint firstAttribute="trailing" secondItem="P73-bU-BKb" secondAttribute="trailing" id="IWw-UJ-OZl"/>
+                        <constraint firstItem="P73-bU-BKb" firstAttribute="leading" secondItem="4iQ-Fv-kh5" secondAttribute="leading" id="VcL-dH-OeN"/>
+                        <constraint firstItem="P73-bU-BKb" firstAttribute="leading" secondItem="4iQ-Fv-kh5" secondAttribute="leading" id="lvR-jF-0bA"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4iQ-Fv-kh5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4hw-6c-8tn"/>
+                <constraint firstItem="4iQ-Fv-kh5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RiA-Ku-sFX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4iQ-Fv-kh5" secondAttribute="bottom" id="W2R-qs-Bxs"/>
+                <constraint firstItem="4iQ-Fv-kh5" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Zin-BS-SKt"/>
+                <constraint firstItem="P73-bU-BKb" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="f1X-Jp-ER1"/>
+                <constraint firstItem="P73-bU-BKb" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" priority="250" id="q3J-rA-4NI"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
+    <resources>
+        <namedColor name="nav_primary">
+            <color red="0.91764705882352937" green="0.1803921568627451" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

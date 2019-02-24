@@ -1,5 +1,5 @@
 //
-//  CalendarViewController.swift
+//  PickCalendarViewController.swift
 //  laguqu-ios
 //
 //  Created by Rizki Ramdani on 24/02/19.
@@ -8,8 +8,9 @@
 
 import UIKit
 
-
-class CalendarViewController: UIViewController {
+class PickCalendarViewController: UIViewController {
+  
+  var dateListener     : ((Date?) -> Void)?
   
   @IBOutlet weak var monthHeaderView: VAMonthHeaderView! {
     didSet {
@@ -35,7 +36,7 @@ class CalendarViewController: UIViewController {
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    setNavigationBarType(.title, title: "Calendar")
+    setNavigationBarType(.detailTitle, title: "Pick your date")
   }
   
   let defaultCalendar: Calendar = {
@@ -83,7 +84,7 @@ class CalendarViewController: UIViewController {
   
 }
 
-extension CalendarViewController: VAMonthHeaderViewDelegate {
+extension PickCalendarViewController: VAMonthHeaderViewDelegate {
   
   func didTapNextMonth() {
     calendarView.nextMonth()
@@ -95,7 +96,7 @@ extension CalendarViewController: VAMonthHeaderViewDelegate {
   
 }
 
-extension CalendarViewController: VAMonthViewAppearanceDelegate {
+extension PickCalendarViewController: VAMonthViewAppearanceDelegate {
   
   func leftInset() -> CGFloat {
     return 10.0
@@ -119,14 +120,14 @@ extension CalendarViewController: VAMonthViewAppearanceDelegate {
   
 }
 
-extension CalendarViewController: VADayViewAppearanceDelegate {
+extension PickCalendarViewController: VADayViewAppearanceDelegate {
   
   func textColor(for state: VADayState) -> UIColor {
     switch state {
     case .out:
       return UIColor(red: 214 / 255, green: 214 / 255, blue: 219 / 255, alpha: 1.0)
     case .selected:
-      return .black
+      return .white
     case .unavailable:
       return .lightGray
     default:
@@ -137,7 +138,7 @@ extension CalendarViewController: VADayViewAppearanceDelegate {
   func textBackgroundColor(for state: VADayState) -> UIColor {
     switch state {
     case .selected:
-      return .white
+      return .red
     default:
       return .clear
     }
@@ -158,9 +159,9 @@ extension CalendarViewController: VADayViewAppearanceDelegate {
   
 }
 
-extension CalendarViewController: VACalendarViewDelegate {
+extension PickCalendarViewController: VACalendarViewDelegate {
   func selectedDate(_ date: Date) {
-    let nav = DetailCalendarViewController()
-    navigationController?.pushViewController(nav, animated: true)
+    dateListener?(date)
+    navigationController?.popViewController(animated: true)
   }
 }
