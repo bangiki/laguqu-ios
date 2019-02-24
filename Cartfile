@@ -1,7 +1,7 @@
-#github "SnapKit/SnapKit" ~> 4.0.0
-#github "kasketis/netfox" "1.12.1"
-#github "soffes/ISO8601"
-#github "AFNetworking/AFNetworking" ~> 3.0
-#github "jsonmodel/jsonmodel"
-#github "Hearst-DD/ObjectMapper" "3.4.1"
+github "SnapKit/SnapKit" ~> 4.0.0
+github "kasketis/netfox" "1.12.1"
+github "soffes/ISO8601"
+github "AFNetworking/AFNetworking" ~> 3.0
+github "jsonmodel/jsonmodel"
+github "Hearst-DD/ObjectMapper" "3.4.1"
 github "SVProgressHUD/SVProgressHUD"
