@@ -60,19 +60,13 @@ class FindLyricsViewController: UIViewController {
     searchController.searchResultsUpdater = self
     searchController.obscuresBackgroundDuringPresentation = false
     searchController.searchBar.placeholder = "Search Artist"
-    //navigationItem.searchController = searchController
     definesPresentationContext = true
     searchController.searchBar.delegate = self
     searchController.searchBar.backgroundImage = UIImage()
     searchController.searchBar.backgroundColor = #colorLiteral(red: 0.9568627451, green: 0.9568627451, blue: 0.9568627451, alpha: 1)
     searchController.searchBar.sizeToFit()
     table.tableHeaderView = searchController.searchBar
-    if #available(iOS 11.0, *) {
-      //navigationItem.searchController = searchController
-      //navigationItem.hidesSearchBarWhenScrolling = true
-    } else {
-      table.tableHeaderView = searchController.searchBar
-    }
+    table.tableHeaderView = searchController.searchBar
   }
   
 }
