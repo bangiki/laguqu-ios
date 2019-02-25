@@ -1,13 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogoutViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogoutViewController" customModule="laguqu_ios" customModuleProvider="target">
             <connections>
+                <outlet property="btnLogout" destination="EtJ-FZ-6Qc" id="FjO-Lo-Ndj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,8 +29,72 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lw6-lV-eYi">
+                    <rect key="frame" x="0.0" y="20" width="375" height="170"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rizki Ramdani" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZn-jS-Fo9">
+                            <rect key="frame" x="111" y="24" width="122" height="26"/>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g8m-BH-Ukq">
+                            <rect key="frame" x="16" y="16" width="72" height="72"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="72" id="AEf-pN-jsg"/>
+                                <constraint firstAttribute="height" constant="72" id="zYo-lN-XUj"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ramdani.rizki19@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9i-B0-5E4">
+                            <rect key="frame" x="111" y="50" width="132" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtJ-FZ-6Qc">
+                            <rect key="frame" x="16" y="104" width="343" height="50"/>
+                            <color key="backgroundColor" name="nav_primary"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="4lj-Wk-4gK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins Medium" pointSize="15"/>
+                            <state key="normal" title="Logout">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="tapToLogout:" destination="-1" eventType="touchUpInside" id="kgX-M0-aas"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="RZn-jS-Fo9" firstAttribute="top" secondItem="lw6-lV-eYi" secondAttribute="top" constant="24" id="39f-oC-OJz"/>
+                        <constraint firstItem="EtJ-FZ-6Qc" firstAttribute="leading" secondItem="lw6-lV-eYi" secondAttribute="leading" constant="16" id="7hj-lL-tFI"/>
+                        <constraint firstItem="RZn-jS-Fo9" firstAttribute="leading" secondItem="g8m-BH-Ukq" secondAttribute="trailing" constant="23" id="HfL-LH-15v"/>
+                        <constraint firstAttribute="bottom" secondItem="EtJ-FZ-6Qc" secondAttribute="bottom" constant="16" id="Rcf-6t-bR6"/>
+                        <constraint firstItem="Q9i-B0-5E4" firstAttribute="top" secondItem="RZn-jS-Fo9" secondAttribute="bottom" id="S3Y-0J-71L"/>
+                        <constraint firstItem="EtJ-FZ-6Qc" firstAttribute="top" secondItem="g8m-BH-Ukq" secondAttribute="bottom" constant="16" id="VEK-yR-wYN"/>
+                        <constraint firstItem="g8m-BH-Ukq" firstAttribute="top" secondItem="lw6-lV-eYi" secondAttribute="top" constant="16" id="edJ-l4-bn9"/>
+                        <constraint firstItem="g8m-BH-Ukq" firstAttribute="leading" secondItem="lw6-lV-eYi" secondAttribute="leading" constant="16" id="hbc-69-a1J"/>
+                        <constraint firstAttribute="trailing" secondItem="EtJ-FZ-6Qc" secondAttribute="trailing" constant="16" id="kM9-q4-WUL"/>
+                        <constraint firstItem="Q9i-B0-5E4" firstAttribute="leading" secondItem="g8m-BH-Ukq" secondAttribute="trailing" constant="23" id="vJJ-fx-BvM"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lw6-lV-eYi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4aj-hr-hm3"/>
+                <constraint firstItem="lw6-lV-eYi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="DEd-bE-GeS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lw6-lV-eYi" secondAttribute="trailing" id="JEz-rc-sTy"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
+    <resources>
+        <namedColor name="nav_primary">
+            <color red="0.91764705879999997" green="0.18039215689999999" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
