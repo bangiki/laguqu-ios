@@ -5,3 +5,4 @@ github "AFNetworking/AFNetworking" ~> 3.0
 github "jsonmodel/jsonmodel"
 github "Hearst-DD/ObjectMapper" "3.4.1"
 github "SVProgressHUD/SVProgressHUD"
+github "realm/realm-cocoa" "v3.11.2"

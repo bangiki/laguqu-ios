@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		802C031E2224283700AB0AE4 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802C031D2224283700AB0AE4 /* RealmSwift.framework */; };
+		802C03202224283C00AB0AE4 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802C031F2224283C00AB0AE4 /* Realm.framework */; };
 		805DB77F2222ACB900C60348 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB77D2222ACB900C60348 /* LoginViewController.swift */; };
 		805DB7802222ACB900C60348 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805DB77E2222ACB900C60348 /* LoginViewController.xib */; };
 		805DB78E2222BA5A00C60348 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7842222BA5A00C60348 /* Poppins-ExtraLight.ttf */; };
@@ -173,6 +175,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		802C031D2224283700AB0AE4 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		802C031F2224283C00AB0AE4 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		805DB77D2222ACB900C60348 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		805DB77E2222ACB900C60348 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		805DB7842222BA5A00C60348 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -421,6 +425,8 @@
 				80E1BD7B222273BF00516017 /* Bolts.framework in Frameworks */,
 				80E1BD7C222273BF00516017 /* FBSDKCoreKit.framework in Frameworks */,
 				80E1BD7D222273BF00516017 /* FBSDKLoginKit.framework in Frameworks */,
+				802C031E2224283700AB0AE4 /* RealmSwift.framework in Frameworks */,
+				802C03202224283C00AB0AE4 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,6 +744,8 @@
 		80E1BD77222273BF00516017 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				802C031F2224283C00AB0AE4 /* Realm.framework */,
+				802C031D2224283700AB0AE4 /* RealmSwift.framework */,
 				80E1BD8B222275DE00516017 /* AFNetworking.framework */,
 				80E1BD89222275D200516017 /* JSONModel.framework */,
 				80E1BD87222275CC00516017 /* ISO8601.framework */,
@@ -1193,6 +1201,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/ISO8601.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/JSONModel.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/AFNetworking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 			);
 			name = Carthage;
 			outputPaths = (
@@ -1203,6 +1213,8 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ISO8601.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/JSONModel.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AFNetworking.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RealmSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Realm.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
