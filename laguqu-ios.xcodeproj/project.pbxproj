@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		802C031E2224283700AB0AE4 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802C031D2224283700AB0AE4 /* RealmSwift.framework */; };
 		802C03202224283C00AB0AE4 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802C031F2224283C00AB0AE4 /* Realm.framework */; };
+		802C032322242B2600AB0AE4 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802C032222242B2600AB0AE4 /* Event.swift */; };
+		802C032522242DC000AB0AE4 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802C032422242DC000AB0AE4 /* Realm.swift */; };
+		802C032822242F1500AB0AE4 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802C032722242F1500AB0AE4 /* RealmHelper.swift */; };
+		802C032A222432A100AB0AE4 /* EventDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802C0329222432A100AB0AE4 /* EventDao.swift */; };
+		802C032C22243BE400AB0AE4 /* FacebookLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802C032B22243BE400AB0AE4 /* FacebookLogin.swift */; };
 		805DB77F2222ACB900C60348 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB77D2222ACB900C60348 /* LoginViewController.swift */; };
 		805DB7802222ACB900C60348 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805DB77E2222ACB900C60348 /* LoginViewController.xib */; };
 		805DB78E2222BA5A00C60348 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7842222BA5A00C60348 /* Poppins-ExtraLight.ttf */; };
@@ -177,6 +182,11 @@
 /* Begin PBXFileReference section */
 		802C031D2224283700AB0AE4 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		802C031F2224283C00AB0AE4 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		802C032222242B2600AB0AE4 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		802C032422242DC000AB0AE4 /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
+		802C032722242F1500AB0AE4 /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		802C0329222432A100AB0AE4 /* EventDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDao.swift; sourceTree = "<group>"; };
+		802C032B22243BE400AB0AE4 /* FacebookLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLogin.swift; sourceTree = "<group>"; };
 		805DB77D2222ACB900C60348 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		805DB77E2222ACB900C60348 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		805DB7842222BA5A00C60348 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -447,6 +457,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		802C032122242B0F00AB0AE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				802C032222242B2600AB0AE4 /* Event.swift */,
+				802C0329222432A100AB0AE4 /* EventDao.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		802C032622242F0900AB0AE4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				802C032722242F1500AB0AE4 /* RealmHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		805DB77B2222AC9500C60348 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -460,6 +487,7 @@
 			children = (
 				805DB77D2222ACB900C60348 /* LoginViewController.swift */,
 				805DB77E2222ACB900C60348 /* LoginViewController.xib */,
+				802C032B22243BE400AB0AE4 /* FacebookLogin.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -552,6 +580,7 @@
 		805DB7A52222C0F900C60348 /* CreateEvent */ = {
 			isa = PBXGroup;
 			children = (
+				802C032122242B0F00AB0AE4 /* Model */,
 				805DB7C52222CB8500C60348 /* ViewController */,
 			);
 			path = CreateEvent;
@@ -563,6 +592,7 @@
 				805DB7BB2222C3F700C60348 /* UIViewController.swift */,
 				805DB7BD2222C4A800C60348 /* UIFont.swift */,
 				805DB7E42222F3DF00C60348 /* UIView.swift */,
+				802C032422242DC000AB0AE4 /* Realm.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -763,6 +793,7 @@
 		80E1BD8D2222760F00516017 /* Domainless */ = {
 			isa = PBXGroup;
 			children = (
+				802C032622242F0900AB0AE4 /* Helper */,
 				805DB7E12222F12700C60348 /* View */,
 				805DB7B62222C3C500C60348 /* Extention */,
 				805DB7812222BA2100C60348 /* Resources */,
@@ -1261,6 +1292,8 @@
 				805DB7D52222DE5F00C60348 /* DetailCalendarViewController.swift in Sources */,
 				80E1BE78222278F700516017 /* SWGLyrics.m in Sources */,
 				80E1BE7B222278F700516017 /* SWGInlineResponse2003MessageBody.m in Sources */,
+				802C032322242B2600AB0AE4 /* Event.swift in Sources */,
+				802C032522242DC000AB0AE4 /* Realm.swift in Sources */,
 				80E1BE4B222278F700516017 /* SWGInlineResponse2006MessageBodyTrackList.m in Sources */,
 				805DB7E72222F6D000C60348 /* KeyboardDismissViewController.swift in Sources */,
 				80E1BE4C222278F700516017 /* SWGInlineResponse2007Message.m in Sources */,
@@ -1280,6 +1313,7 @@
 				80E1BE54222278F700516017 /* SWGTrackPrimaryGenresMusicGenre.m in Sources */,
 				80E1BE62222278F700516017 /* SWGInlineResponse2006.m in Sources */,
 				805DB7BC2222C3F700C60348 /* UIViewController.swift in Sources */,
+				802C032C22243BE400AB0AE4 /* FacebookLogin.swift in Sources */,
 				805DB7CB2222D3B300C60348 /* Artist.swift in Sources */,
 				80E1BE67222278F700516017 /* SWGInlineResponse2009.m in Sources */,
 				80E1BE93222278F700516017 /* VAWeek.swift in Sources */,
@@ -1320,6 +1354,7 @@
 				80E1BE42222278F700516017 /* SWGConfiguration.m in Sources */,
 				80E1BE91222278F700516017 /* VACalendarView.swift in Sources */,
 				80E1BE63222278F700516017 /* SWGInlineResponse2001Message.m in Sources */,
+				802C032A222432A100AB0AE4 /* EventDao.swift in Sources */,
 				80E1BE74222278F700516017 /* SWGAlbum.m in Sources */,
 				80E1BE75222278F700516017 /* SWGArtistArtistNameTranslation.m in Sources */,
 				805DB7E52222F3DF00C60348 /* UIView.swift in Sources */,
@@ -1334,6 +1369,7 @@
 				80E1BE44222278F700516017 /* SWGResponseDeserializer.m in Sources */,
 				80E1BE5A222278F700516017 /* SWGArtistPrimaryGenresMusicGenre.m in Sources */,
 				80E1BE56222278F700516017 /* SWGInlineResponse2005.m in Sources */,
+				802C032822242F1500AB0AE4 /* RealmHelper.swift in Sources */,
 				80E1BE82222278F700516017 /* SWGInlineResponse200MessageBody.m in Sources */,
 				80E1BE46222278F700516017 /* SWGLogger.m in Sources */,
 			);
