@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SVProgressHUD
+import ObjectMapper
 
 class FindLyricsViewController: UIViewController {
   
@@ -15,10 +17,13 @@ class FindLyricsViewController: UIViewController {
   let searchController = UISearchController(searchResultsController: nil)
   
   var artistList : [Artist]?
-  
+ 
+  let swgArtistSearch = SWGArtistApi()
+  let format = "json"
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    populateData()
+    ApiClient.configApiKey()
     registerCell()
     setupSearchBar()
   }
@@ -26,25 +31,32 @@ class FindLyricsViewController: UIViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     setNavigationBarType(.title, title: "Find")
+    searchArtist(name: "adele")
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
   }
   
-  private func populateData(){
-    artistList = [Artist(id: 1, name: "Secondhand Serenade", rating: 10),
-                   Artist(id: 2, name: "Secondhand Serenade", rating: 10),
-                   Artist(id: 3, name: "Secondhand Serenade", rating: 10),
-                   Artist(id: 4, name: "Secondhand Serenade", rating: 10),
-                   Artist(id: 5, name: "Secondhand Serenade", rating: 10),
-                   Artist(id: 6, name: "Secondhand Serenade", rating: 10),
-                   Artist(id: 1, name: "Secondhand Serenade", rating: 10),
-                   Artist(id: 2, name: "Secondhand Serenade", rating: 10),
-                   Artist(id: 3, name: "Secondhand Serenade", rating: 10),
-                   Artist(id: 4, name: "Secondhand Serenade", rating: 10),
-                   Artist(id: 5, name: "Secondhand Serenade", rating: 10),
-                   Artist(id: 6, name: "Secondhand Serenade", rating: 10)]
+  private func searchArtist(name: String){
+    SVProgressHUD.show()
+    
+    swgArtistSearch.artistSearchGet(withFormat: format,
+                                    callback: nil,
+                                    qArtist: name.lowercased(),
+                                    fArtistId: nil,
+                                    page: nil,
+                                    pageSize: 25,
+                                    completionHandler: ({ [weak self] (response, error) in
+                                      
+                                      guard let jsonString = response?.toJSONString() else { return }
+                                      let message = Mapper<MessageResponse>().map(JSONString: jsonString)
+                                    
+                                      self?.artistList = message?.artistList
+                                      self?.table.reloadData()
+                                      SVProgressHUD.dismiss()
+                                    }))
+    
   }
   
   private func registerCell(){
@@ -108,7 +120,7 @@ extension FindLyricsViewController: UISearchBarDelegate {
   
   func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
     if let artistName = searchBar.text {
-      print("keyword :\(artistName)")
+      searchArtist(name: artistName)
     }
   }
 }
@@ -116,6 +128,5 @@ extension FindLyricsViewController: UISearchBarDelegate {
 extension FindLyricsViewController: UISearchResultsUpdating {
   // MARK: - UISearchResultsUpdating Delegate
   func updateSearchResults(for searchController: UISearchController) {
-    let searchBar = searchController.searchBar
   }
 }

@@ -160,6 +160,8 @@
 		80E1BE97222278F700516017 /* VAMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE3E222278F700516017 /* VAMonthView.swift */; };
 		80E1BE98222278F700516017 /* VACalendarMonthDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BE3F222278F700516017 /* VACalendarMonthDelegate.swift */; };
 		80E1BE99222278F700516017 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80E1BE40222278F700516017 /* Info.plist */; };
+		80E1FBC02224433600879A75 /* MessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1FBBF2224433600879A75 /* MessageResponse.swift */; };
+		80E1FBC52224507800879A75 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1FBC42224507800879A75 /* ApiClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -418,6 +420,8 @@
 		80E1BE3F222278F700516017 /* VACalendarMonthDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VACalendarMonthDelegate.swift; sourceTree = "<group>"; };
 		80E1BE40222278F700516017 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80E1BE9C22227A4400516017 /* BaseProject-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		80E1FBBF2224433600879A75 /* MessageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageResponse.swift; sourceTree = "<group>"; };
+		80E1FBC42224507800879A75 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -654,6 +658,7 @@
 			isa = PBXGroup;
 			children = (
 				805DB7CA2222D3B300C60348 /* Artist.swift */,
+				80E1FBBF2224433600879A75 /* MessageResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -793,6 +798,7 @@
 		80E1BD8D2222760F00516017 /* Domainless */ = {
 			isa = PBXGroup;
 			children = (
+				80E1FBC12224504500879A75 /* Network */,
 				802C032622242F0900AB0AE4 /* Helper */,
 				805DB7E12222F12700C60348 /* View */,
 				805DB7B62222C3C500C60348 /* Extention */,
@@ -1069,6 +1075,14 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		80E1FBC12224504500879A75 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				80E1FBC42224507800879A75 /* ApiClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1265,6 +1279,7 @@
 				80E1BE97222278F700516017 /* VAMonthView.swift in Sources */,
 				80E1BE50222278F700516017 /* SWGInlineResponse2001.m in Sources */,
 				80E1BE6C222278F700516017 /* SWGTrackSecondaryGenresMusicGenre.m in Sources */,
+				80E1FBC52224507800879A75 /* ApiClient.swift in Sources */,
 				80E1BE65222278F700516017 /* SWGSnippet.m in Sources */,
 				80E1BE70222278F700516017 /* SWGAlbumPrimaryGenres.m in Sources */,
 				80E1BE88222278F700516017 /* SWGLyricsApi.m in Sources */,
@@ -1308,6 +1323,7 @@
 				80E1BE8A222278F700516017 /* SWGArtistApi.m in Sources */,
 				80E1BE58222278F700516017 /* SWGArtistSecondaryGenres.m in Sources */,
 				80E1BE8E222278F700516017 /* VADotView.swift in Sources */,
+				80E1FBC02224433600879A75 /* MessageResponse.swift in Sources */,
 				80E1BE6D222278F700516017 /* SWGSubtitle.m in Sources */,
 				80E1BE52222278F700516017 /* SWGAlbumPrimaryGenresMusicGenreList.m in Sources */,
 				80E1BE54222278F700516017 /* SWGTrackPrimaryGenresMusicGenre.m in Sources */,
