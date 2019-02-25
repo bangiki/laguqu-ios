@@ -23,4 +23,9 @@ class SplashScreenViewController: UIViewController {
     super.didReceiveMemoryWarning()
   }
   
+  func nextScreen() {
+    let nav = LoginViewController()
+    navigationController?.pushViewController(nav, animated: true)
+  }
+  
 }

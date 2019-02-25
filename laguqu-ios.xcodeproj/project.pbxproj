@@ -7,6 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		805DB77F2222ACB900C60348 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB77D2222ACB900C60348 /* LoginViewController.swift */; };
+		805DB7802222ACB900C60348 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805DB77E2222ACB900C60348 /* LoginViewController.xib */; };
+		805DB78E2222BA5A00C60348 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7842222BA5A00C60348 /* Poppins-ExtraLight.ttf */; };
+		805DB78F2222BA5A00C60348 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7852222BA5A00C60348 /* Poppins-Light.ttf */; };
+		805DB7902222BA5A00C60348 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7862222BA5A00C60348 /* Poppins-Medium.ttf */; };
+		805DB7912222BA5A00C60348 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7872222BA5A00C60348 /* Poppins-ExtraBold.ttf */; };
+		805DB7922222BA5A00C60348 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7882222BA5A00C60348 /* OFL.txt */; };
+		805DB7932222BA5A00C60348 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7892222BA5A00C60348 /* Poppins-Regular.ttf */; };
+		805DB7942222BA5A00C60348 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 805DB78A2222BA5A00C60348 /* Poppins-Bold.ttf */; };
+		805DB7952222BA5A00C60348 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 805DB78B2222BA5A00C60348 /* Poppins-Black.ttf */; };
+		805DB7962222BA5A00C60348 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 805DB78C2222BA5A00C60348 /* Poppins-Thin.ttf */; };
+		805DB7972222BA5A00C60348 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 805DB78D2222BA5A00C60348 /* Poppins-SemiBold.ttf */; };
+		805DB79C2222BF9200C60348 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB79A2222BF9200C60348 /* HomeTabBarViewController.swift */; };
+		805DB79D2222BF9200C60348 /* HomeTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805DB79B2222BF9200C60348 /* HomeTabBarViewController.xib */; };
+		805DB7A12222C02900C60348 /* AHKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7A02222C02900C60348 /* AHKNavigationController.m */; };
+		805DB7A82222C15C00C60348 /* FindLyricsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7A62222C15C00C60348 /* FindLyricsViewController.swift */; };
+		805DB7A92222C15C00C60348 /* FindLyricsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7A72222C15C00C60348 /* FindLyricsViewController.xib */; };
+		805DB7AC2222C16E00C60348 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7AA2222C16E00C60348 /* CalendarViewController.swift */; };
+		805DB7AD2222C16E00C60348 /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7AB2222C16E00C60348 /* CalendarViewController.xib */; };
+		805DB7B02222C18500C60348 /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7AE2222C18500C60348 /* WishlistViewController.swift */; };
+		805DB7B12222C18500C60348 /* WishlistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7AF2222C18500C60348 /* WishlistViewController.xib */; };
+		805DB7B42222C19C00C60348 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7B22222C19C00C60348 /* CreateEventViewController.swift */; };
+		805DB7B52222C19C00C60348 /* CreateEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7B32222C19C00C60348 /* CreateEventViewController.xib */; };
+		805DB7BC2222C3F700C60348 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7BB2222C3F700C60348 /* UIViewController.swift */; };
+		805DB7BE2222C4A800C60348 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7BD2222C4A800C60348 /* UIFont.swift */; };
+		805DB7C32222CB5700C60348 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7C12222CB5700C60348 /* LogoutViewController.swift */; };
+		805DB7C42222CB5700C60348 /* LogoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7C22222CB5700C60348 /* LogoutViewController.xib */; };
+		805DB7CB2222D3B300C60348 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7CA2222D3B300C60348 /* Artist.swift */; };
+		805DB7CF2222D4D800C60348 /* ArtisAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7CD2222D4D800C60348 /* ArtisAlbumCell.xib */; };
+		805DB7D02222D4D800C60348 /* ArtisAlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7CE2222D4D800C60348 /* ArtisAlbumCell.swift */; };
+		805DB7D52222DE5F00C60348 /* DetailCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7D32222DE5F00C60348 /* DetailCalendarViewController.swift */; };
+		805DB7D62222DE5F00C60348 /* DetailCalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7D42222DE5F00C60348 /* DetailCalendarViewController.xib */; };
+		805DB7DA2222E1D500C60348 /* EventCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7D82222E1D500C60348 /* EventCalendarCell.swift */; };
+		805DB7DB2222E1D500C60348 /* EventCalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7D92222E1D500C60348 /* EventCalendarCell.xib */; };
+		805DB7E32222F13C00C60348 /* GeneralTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7E22222F13C00C60348 /* GeneralTextField.swift */; };
+		805DB7E52222F3DF00C60348 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7E42222F3DF00C60348 /* UIView.swift */; };
+		805DB7E72222F6D000C60348 /* KeyboardDismissViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7E62222F6D000C60348 /* KeyboardDismissViewController.swift */; };
+		805DB7EC2222F9BF00C60348 /* PickCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805DB7EA2222F9BF00C60348 /* PickCalendarViewController.swift */; };
+		805DB7ED2222F9BF00C60348 /* PickCalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805DB7EB2222F9BF00C60348 /* PickCalendarViewController.xib */; };
 		80E1BD4722226FAA00516017 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BD4622226FAA00516017 /* AppDelegate.swift */; };
 		80E1BD4F22226FAA00516017 /* laguqu_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80E1BD4D22226FAA00516017 /* laguqu_ios.xcdatamodeld */; };
 		80E1BD5122226FAC00516017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E1BD5022226FAC00516017 /* Assets.xcassets */; };
@@ -134,6 +173,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		805DB77D2222ACB900C60348 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		805DB77E2222ACB900C60348 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		805DB7842222BA5A00C60348 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		805DB7852222BA5A00C60348 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		805DB7862222BA5A00C60348 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		805DB7872222BA5A00C60348 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		805DB7882222BA5A00C60348 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		805DB7892222BA5A00C60348 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		805DB78A2222BA5A00C60348 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		805DB78B2222BA5A00C60348 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		805DB78C2222BA5A00C60348 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		805DB78D2222BA5A00C60348 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		805DB79A2222BF9200C60348 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		805DB79B2222BF9200C60348 /* HomeTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTabBarViewController.xib; sourceTree = "<group>"; };
+		805DB79F2222C02900C60348 /* AHKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHKNavigationController.h; sourceTree = "<group>"; };
+		805DB7A02222C02900C60348 /* AHKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHKNavigationController.m; sourceTree = "<group>"; };
+		805DB7A62222C15C00C60348 /* FindLyricsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindLyricsViewController.swift; sourceTree = "<group>"; };
+		805DB7A72222C15C00C60348 /* FindLyricsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindLyricsViewController.xib; sourceTree = "<group>"; };
+		805DB7AA2222C16E00C60348 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		805DB7AB2222C16E00C60348 /* CalendarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
+		805DB7AE2222C18500C60348 /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
+		805DB7AF2222C18500C60348 /* WishlistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WishlistViewController.xib; sourceTree = "<group>"; };
+		805DB7B22222C19C00C60348 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
+		805DB7B32222C19C00C60348 /* CreateEventViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateEventViewController.xib; sourceTree = "<group>"; };
+		805DB7BB2222C3F700C60348 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		805DB7BD2222C4A800C60348 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		805DB7C12222CB5700C60348 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		805DB7C22222CB5700C60348 /* LogoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoutViewController.xib; sourceTree = "<group>"; };
+		805DB7CA2222D3B300C60348 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		805DB7CD2222D4D800C60348 /* ArtisAlbumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArtisAlbumCell.xib; sourceTree = "<group>"; };
+		805DB7CE2222D4D800C60348 /* ArtisAlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtisAlbumCell.swift; sourceTree = "<group>"; };
+		805DB7D32222DE5F00C60348 /* DetailCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCalendarViewController.swift; sourceTree = "<group>"; };
+		805DB7D42222DE5F00C60348 /* DetailCalendarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCalendarViewController.xib; sourceTree = "<group>"; };
+		805DB7D82222E1D500C60348 /* EventCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCalendarCell.swift; sourceTree = "<group>"; };
+		805DB7D92222E1D500C60348 /* EventCalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCalendarCell.xib; sourceTree = "<group>"; };
+		805DB7E22222F13C00C60348 /* GeneralTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralTextField.swift; sourceTree = "<group>"; };
+		805DB7E42222F3DF00C60348 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		805DB7E62222F6D000C60348 /* KeyboardDismissViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDismissViewController.swift; sourceTree = "<group>"; };
+		805DB7EA2222F9BF00C60348 /* PickCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickCalendarViewController.swift; sourceTree = "<group>"; };
+		805DB7EB2222F9BF00C60348 /* PickCalendarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickCalendarViewController.xib; sourceTree = "<group>"; };
 		80E1BD4322226FAA00516017 /* laguqu-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "laguqu-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E1BD4622226FAA00516017 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80E1BD4E22226FAA00516017 /* laguqu_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = laguqu_ios.xcdatamodel; sourceTree = "<group>"; };
@@ -362,6 +441,249 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		805DB77B2222AC9500C60348 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				805DB77C2222ACA800C60348 /* ViewController */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		805DB77C2222ACA800C60348 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				805DB77D2222ACB900C60348 /* LoginViewController.swift */,
+				805DB77E2222ACB900C60348 /* LoginViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		805DB7812222BA2100C60348 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7822222BA5A00C60348 /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		805DB7822222BA5A00C60348 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7832222BA5A00C60348 /* Poppins */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		805DB7832222BA5A00C60348 /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7842222BA5A00C60348 /* Poppins-ExtraLight.ttf */,
+				805DB7852222BA5A00C60348 /* Poppins-Light.ttf */,
+				805DB7862222BA5A00C60348 /* Poppins-Medium.ttf */,
+				805DB7872222BA5A00C60348 /* Poppins-ExtraBold.ttf */,
+				805DB7882222BA5A00C60348 /* OFL.txt */,
+				805DB7892222BA5A00C60348 /* Poppins-Regular.ttf */,
+				805DB78A2222BA5A00C60348 /* Poppins-Bold.ttf */,
+				805DB78B2222BA5A00C60348 /* Poppins-Black.ttf */,
+				805DB78C2222BA5A00C60348 /* Poppins-Thin.ttf */,
+				805DB78D2222BA5A00C60348 /* Poppins-SemiBold.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+		805DB7982222BF7300C60348 /* HomeTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7992222BF7E00C60348 /* ViewController */,
+			);
+			path = HomeTabBar;
+			sourceTree = "<group>";
+		};
+		805DB7992222BF7E00C60348 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				805DB79A2222BF9200C60348 /* HomeTabBarViewController.swift */,
+				805DB79B2222BF9200C60348 /* HomeTabBarViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		805DB79E2222C02900C60348 /* AHKNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				805DB79F2222C02900C60348 /* AHKNavigationController.h */,
+				805DB7A02222C02900C60348 /* AHKNavigationController.m */,
+			);
+			path = AHKNavigationController;
+			sourceTree = "<group>";
+		};
+		805DB7A22222C0DD00C60348 /* FindLyrics */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7CC2222D4D800C60348 /* Cell */,
+				805DB7C92222D3A500C60348 /* Model */,
+				805DB7C82222CBA700C60348 /* ViewController */,
+			);
+			path = FindLyrics;
+			sourceTree = "<group>";
+		};
+		805DB7A32222C0E600C60348 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7C72222CB9C00C60348 /* ViewController */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		805DB7A42222C0ED00C60348 /* Wishlist */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7C62222CB9100C60348 /* ViewController */,
+			);
+			path = Wishlist;
+			sourceTree = "<group>";
+		};
+		805DB7A52222C0F900C60348 /* CreateEvent */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7C52222CB8500C60348 /* ViewController */,
+			);
+			path = CreateEvent;
+			sourceTree = "<group>";
+		};
+		805DB7B62222C3C500C60348 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7BB2222C3F700C60348 /* UIViewController.swift */,
+				805DB7BD2222C4A800C60348 /* UIFont.swift */,
+				805DB7E42222F3DF00C60348 /* UIView.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		805DB7BF2222CB3B00C60348 /* Logout */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7C02222CB4300C60348 /* ViewController */,
+			);
+			path = Logout;
+			sourceTree = "<group>";
+		};
+		805DB7C02222CB4300C60348 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7C12222CB5700C60348 /* LogoutViewController.swift */,
+				805DB7C22222CB5700C60348 /* LogoutViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		805DB7C52222CB8500C60348 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7B22222C19C00C60348 /* CreateEventViewController.swift */,
+				805DB7B32222C19C00C60348 /* CreateEventViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		805DB7C62222CB9100C60348 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7AE2222C18500C60348 /* WishlistViewController.swift */,
+				805DB7AF2222C18500C60348 /* WishlistViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		805DB7C72222CB9C00C60348 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7AA2222C16E00C60348 /* CalendarViewController.swift */,
+				805DB7AB2222C16E00C60348 /* CalendarViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		805DB7C82222CBA700C60348 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7A62222C15C00C60348 /* FindLyricsViewController.swift */,
+				805DB7A72222C15C00C60348 /* FindLyricsViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		805DB7C92222D3A500C60348 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7CA2222D3B300C60348 /* Artist.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		805DB7CC2222D4D800C60348 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7CD2222D4D800C60348 /* ArtisAlbumCell.xib */,
+				805DB7CE2222D4D800C60348 /* ArtisAlbumCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		805DB7D12222DE2000C60348 /* DetailCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7D72222E17A00C60348 /* Cell */,
+				805DB7D22222DE3B00C60348 /* ViewController */,
+			);
+			path = DetailCalendar;
+			sourceTree = "<group>";
+		};
+		805DB7D22222DE3B00C60348 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7D32222DE5F00C60348 /* DetailCalendarViewController.swift */,
+				805DB7D42222DE5F00C60348 /* DetailCalendarViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		805DB7D72222E17A00C60348 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7D82222E1D500C60348 /* EventCalendarCell.swift */,
+				805DB7D92222E1D500C60348 /* EventCalendarCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		805DB7E12222F12700C60348 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7E22222F13C00C60348 /* GeneralTextField.swift */,
+				805DB7E62222F6D000C60348 /* KeyboardDismissViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		805DB7E82222F96200C60348 /* PickCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7E92222F96B00C60348 /* ViewController */,
+			);
+			path = PickCalendar;
+			sourceTree = "<group>";
+		};
+		805DB7E92222F96B00C60348 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				805DB7EA2222F9BF00C60348 /* PickCalendarViewController.swift */,
+				805DB7EB2222F9BF00C60348 /* PickCalendarViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		80E1BD3A22226FAA00516017 = {
 			isa = PBXGroup;
 			children = (
@@ -433,6 +755,9 @@
 		80E1BD8D2222760F00516017 /* Domainless */ = {
 			isa = PBXGroup;
 			children = (
+				805DB7E12222F12700C60348 /* View */,
+				805DB7B62222C3C500C60348 /* Extention */,
+				805DB7812222BA2100C60348 /* Resources */,
 				80E1BE9A22227A4400516017 /* Utils */,
 				80E1BD95222278F700516017 /* Library */,
 				80E1BD8F2222761400516017 /* ApplicationEntry */,
@@ -443,6 +768,15 @@
 		80E1BD8E2222761000516017 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				805DB7E82222F96200C60348 /* PickCalendar */,
+				805DB7BF2222CB3B00C60348 /* Logout */,
+				805DB7A52222C0F900C60348 /* CreateEvent */,
+				805DB7A42222C0ED00C60348 /* Wishlist */,
+				805DB7D12222DE2000C60348 /* DetailCalendar */,
+				805DB7A32222C0E600C60348 /* Calendar */,
+				805DB7A22222C0DD00C60348 /* FindLyrics */,
+				805DB7982222BF7300C60348 /* HomeTabBar */,
+				805DB77B2222AC9500C60348 /* Login */,
 				80E1BD902222775500516017 /* SplashScreen */,
 			);
 			path = Feature;
@@ -469,6 +803,7 @@
 		80E1BD95222278F700516017 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				805DB79E2222C02900C60348 /* AHKNavigationController */,
 				80E1BD96222278F700516017 /* MusixMatchSwaggerAPIClient */,
 				80E1BE31222278F700516017 /* VACalendar */,
 			);
@@ -800,9 +1135,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				805DB7972222BA5A00C60348 /* Poppins-SemiBold.ttf in Resources */,
+				805DB79D2222BF9200C60348 /* HomeTabBarViewController.xib in Resources */,
+				805DB7DB2222E1D500C60348 /* EventCalendarCell.xib in Resources */,
+				805DB7AD2222C16E00C60348 /* CalendarViewController.xib in Resources */,
+				805DB7D62222DE5F00C60348 /* DetailCalendarViewController.xib in Resources */,
+				805DB7B52222C19C00C60348 /* CreateEventViewController.xib in Resources */,
+				805DB7922222BA5A00C60348 /* OFL.txt in Resources */,
+				805DB7962222BA5A00C60348 /* Poppins-Thin.ttf in Resources */,
+				805DB78F2222BA5A00C60348 /* Poppins-Light.ttf in Resources */,
+				805DB7C42222CB5700C60348 /* LogoutViewController.xib in Resources */,
+				805DB7912222BA5A00C60348 /* Poppins-ExtraBold.ttf in Resources */,
+				805DB7952222BA5A00C60348 /* Poppins-Black.ttf in Resources */,
+				805DB78E2222BA5A00C60348 /* Poppins-ExtraLight.ttf in Resources */,
+				805DB7802222ACB900C60348 /* LoginViewController.xib in Resources */,
 				80E1BD5422226FAC00516017 /* LaunchScreen.storyboard in Resources */,
 				80E1BD942222778900516017 /* SplashScreenViewController.xib in Resources */,
+				805DB7942222BA5A00C60348 /* Poppins-Bold.ttf in Resources */,
+				805DB7902222BA5A00C60348 /* Poppins-Medium.ttf in Resources */,
+				805DB7B12222C18500C60348 /* WishlistViewController.xib in Resources */,
+				805DB7ED2222F9BF00C60348 /* PickCalendarViewController.xib in Resources */,
+				805DB7CF2222D4D800C60348 /* ArtisAlbumCell.xib in Resources */,
+				805DB7932222BA5A00C60348 /* Poppins-Regular.ttf in Resources */,
 				80E1BD5122226FAC00516017 /* Assets.xcassets in Resources */,
+				805DB7A92222C15C00C60348 /* FindLyricsViewController.xib in Resources */,
 				80E1BE99222278F700516017 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -859,8 +1215,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				805DB7B02222C18500C60348 /* WishlistViewController.swift in Sources */,
 				80E1BE7D222278F700516017 /* SWGInlineResponse2002Message.m in Sources */,
 				80E1BE55222278F700516017 /* SWGInlineResponse2005MessageHeader.m in Sources */,
+				805DB7DA2222E1D500C60348 /* EventCalendarCell.swift in Sources */,
 				80E1BE97222278F700516017 /* VAMonthView.swift in Sources */,
 				80E1BE50222278F700516017 /* SWGInlineResponse2001.m in Sources */,
 				80E1BE6C222278F700516017 /* SWGTrackSecondaryGenresMusicGenre.m in Sources */,
@@ -873,21 +1231,26 @@
 				80E1BE41222278F700516017 /* SWGQueryParamCollection.m in Sources */,
 				80E1BE57222278F700516017 /* SWGArtistArtistNameTranslationList.m in Sources */,
 				80E1BE77222278F700516017 /* SWGInlineResponse2008Message.m in Sources */,
+				805DB7D02222D4D800C60348 /* ArtisAlbumCell.swift in Sources */,
 				80E1BE47222278F700516017 /* SWGSanitizer.m in Sources */,
 				80E1BE7E222278F700516017 /* SWGTrackPrimaryGenresMusicGenreList.m in Sources */,
 				80E1BE45222278F700516017 /* SWGJSONRequestSerializer.m in Sources */,
 				80E1BE59222278F700516017 /* SWGTrackPrimaryGenres.m in Sources */,
 				80E1BE80222278F700516017 /* SWGInlineResponse2002MessageBody.m in Sources */,
 				80E1BE6B222278F700516017 /* SWGInlineResponse2007.m in Sources */,
+				805DB7EC2222F9BF00C60348 /* PickCalendarViewController.swift in Sources */,
 				80E1BE8C222278F700516017 /* VAMonthHeaderView.swift in Sources */,
 				80E1BE92222278F700516017 /* VAWeekDaysView.swift in Sources */,
+				805DB7A12222C02900C60348 /* AHKNavigationController.m in Sources */,
 				80E1BE48222278F700516017 /* SWGApiClient.m in Sources */,
 				80E1BE76222278F700516017 /* SWGInlineResponse2009Message.m in Sources */,
 				80E1BE7F222278F700516017 /* SWGInlineResponse2004.m in Sources */,
 				80E1BE53222278F700516017 /* SWGInlineResponse20010Message.m in Sources */,
+				805DB7D52222DE5F00C60348 /* DetailCalendarViewController.swift in Sources */,
 				80E1BE78222278F700516017 /* SWGLyrics.m in Sources */,
 				80E1BE7B222278F700516017 /* SWGInlineResponse2003MessageBody.m in Sources */,
 				80E1BE4B222278F700516017 /* SWGInlineResponse2006MessageBodyTrackList.m in Sources */,
+				805DB7E72222F6D000C60348 /* KeyboardDismissViewController.swift in Sources */,
 				80E1BE4C222278F700516017 /* SWGInlineResponse2007Message.m in Sources */,
 				80E1BE60222278F700516017 /* SWGAlbumPrimaryGenresMusicGenre.m in Sources */,
 				80E1BE5B222278F700516017 /* SWGInlineResponse2001MessageBody.m in Sources */,
@@ -904,8 +1267,11 @@
 				80E1BE52222278F700516017 /* SWGAlbumPrimaryGenresMusicGenreList.m in Sources */,
 				80E1BE54222278F700516017 /* SWGTrackPrimaryGenresMusicGenre.m in Sources */,
 				80E1BE62222278F700516017 /* SWGInlineResponse2006.m in Sources */,
+				805DB7BC2222C3F700C60348 /* UIViewController.swift in Sources */,
+				805DB7CB2222D3B300C60348 /* Artist.swift in Sources */,
 				80E1BE67222278F700516017 /* SWGInlineResponse2009.m in Sources */,
 				80E1BE93222278F700516017 /* VAWeek.swift in Sources */,
+				805DB7AC2222C16E00C60348 /* CalendarViewController.swift in Sources */,
 				80E1BE7A222278F700516017 /* SWGTrackSecondaryGenresMusicGenreList.m in Sources */,
 				80E1BE90222278F700516017 /* VAWeekView.swift in Sources */,
 				80E1BE98222278F700516017 /* VACalendarMonthDelegate.swift in Sources */,
@@ -913,6 +1279,7 @@
 				80E1BE61222278F700516017 /* SWGInlineResponse2008.m in Sources */,
 				80E1BE66222278F700516017 /* SWGArtistPrimaryGenres.m in Sources */,
 				80E1BE94222278F700516017 /* VAFormatters.swift in Sources */,
+				805DB7C32222CB5700C60348 /* LogoutViewController.swift in Sources */,
 				80E1BD4722226FAA00516017 /* AppDelegate.swift in Sources */,
 				80E1BE5C222278F700516017 /* SWGInlineResponse2006MessageBody.m in Sources */,
 				80E1BE6A222278F700516017 /* SWGInlineResponse200Message.m in Sources */,
@@ -922,7 +1289,9 @@
 				80E1BE5E222278F700516017 /* SWGInlineResponse2001MessageHeader.m in Sources */,
 				80E1BE49222278F700516017 /* JSONValueTransformer+ISO8601.m in Sources */,
 				80E1BE85222278F700516017 /* SWGInlineResponse200.m in Sources */,
+				805DB7E32222F13C00C60348 /* GeneralTextField.swift in Sources */,
 				80E1BE8B222278F700516017 /* SWGSnippetApi.m in Sources */,
+				805DB7BE2222C4A800C60348 /* UIFont.swift in Sources */,
 				80E1BE43222278F700516017 /* SWGJSONResponseSerializer.m in Sources */,
 				80E1BE4F222278F700516017 /* SWGInlineResponse200MessageHeader.m in Sources */,
 				80E1BE68222278F700516017 /* SWGInlineResponse20010.m in Sources */,
@@ -931,15 +1300,20 @@
 				80E1BE83222278F700516017 /* SWGTrack.m in Sources */,
 				80E1BE5D222278F700516017 /* SWGArtist.m in Sources */,
 				80E1BD932222778900516017 /* SplashScreenViewController.swift in Sources */,
+				805DB77F2222ACB900C60348 /* LoginViewController.swift in Sources */,
 				80E1BE87222278F700516017 /* SWGAlbumApi.m in Sources */,
 				80E1BE95222278F700516017 /* VADayView.swift in Sources */,
+				805DB7A82222C15C00C60348 /* FindLyricsViewController.swift in Sources */,
 				80E1BE86222278F700516017 /* SWGTrackApi.m in Sources */,
 				80E1BE42222278F700516017 /* SWGConfiguration.m in Sources */,
 				80E1BE91222278F700516017 /* VACalendarView.swift in Sources */,
 				80E1BE63222278F700516017 /* SWGInlineResponse2001Message.m in Sources */,
 				80E1BE74222278F700516017 /* SWGAlbum.m in Sources */,
 				80E1BE75222278F700516017 /* SWGArtistArtistNameTranslation.m in Sources */,
+				805DB7E52222F3DF00C60348 /* UIView.swift in Sources */,
+				805DB79C2222BF9200C60348 /* HomeTabBarViewController.swift in Sources */,
 				80E1BE6F222278F700516017 /* SWGArtistPrimaryGenresMusicGenreList.m in Sources */,
+				805DB7B42222C19C00C60348 /* CreateEventViewController.swift in Sources */,
 				80E1BE79222278F700516017 /* SWGInlineResponse2004MessageBody.m in Sources */,
 				80E1BE71222278F700516017 /* SWGInlineResponse2004Message.m in Sources */,
 				80E1BD4F22226FAA00516017 /* laguqu_ios.xcdatamodeld in Sources */,

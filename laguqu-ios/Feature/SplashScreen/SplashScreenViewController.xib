@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,8 +20,24 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="AmU-Gd-lEo">
+                    <rect key="frame" x="57" y="284.5" width="261" height="98"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" name="bg_splashscreen"/>
+            <constraints>
+                <constraint firstItem="AmU-Gd-lEo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PQm-bp-NGh"/>
+                <constraint firstItem="AmU-Gd-lEo" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="eY7-yP-0eb"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
+    <resources>
+        <image name="logo" width="261" height="98"/>
+        <namedColor name="bg_splashscreen">
+            <color red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
