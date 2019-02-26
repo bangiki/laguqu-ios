@@ -10,7 +10,7 @@ import UIKit
 
 class PickCalendarViewController: UIViewController {
   
-  var dateListener     : ((Date?) -> Void)?
+  var dateListener     : ((String?) -> Void)?
   
   @IBOutlet weak var monthHeaderView: VAMonthHeaderView! {
     didSet {
@@ -161,7 +161,7 @@ extension PickCalendarViewController: VADayViewAppearanceDelegate {
 
 extension PickCalendarViewController: VACalendarViewDelegate {
   func selectedDate(_ date: Date) {
-    dateListener?(date)
+    dateListener?(date.toString(withFormat: "dd-MM-yyyy"))
     navigationController?.popViewController(animated: true)
   }
 }
