@@ -9,6 +9,12 @@
 import UIKit
 import SVProgressHUD
 import ObjectMapper
+import DZNEmptyDataSet
+
+enum TypeMenu {
+  case find
+  case wishlist
+}
 
 class FindLyricsViewController: UIViewController {
   
@@ -20,7 +26,7 @@ class FindLyricsViewController: UIViewController {
  
   let swgArtistSearch = SWGArtistApi()
   let format = "json"
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     ApiClient.configApiKey()
@@ -31,7 +37,6 @@ class FindLyricsViewController: UIViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     setNavigationBarType(.title, title: "Find")
-    searchArtist(name: "adele")
   }
   
   override func didReceiveMemoryWarning() {
@@ -50,9 +55,13 @@ class FindLyricsViewController: UIViewController {
                                     completionHandler: ({ [weak self] (response, error) in
                                       
                                       guard let jsonString = response?.toJSONString() else { return }
-                                      let message = Mapper<MessageResponse>().map(JSONString: jsonString)
-                                    
-                                      self?.artistList = message?.artistList
+                                      let artistList = Mapper<MessageResponse>().map(JSONString: jsonString)?.artistList
+                                      
+                                      let artisRealm = ArtistRealmDao.shared.getAllArtist()
+                                      
+                                      //let compare = artistList?.filter()
+                                      
+                                      self?.artistList = artistList
                                       self?.table.reloadData()
                                       SVProgressHUD.dismiss()
                                     }))
@@ -62,6 +71,8 @@ class FindLyricsViewController: UIViewController {
   private func registerCell(){
     table.delegate = self
     table.dataSource = self
+    table.emptyDataSetSource = self
+    table.emptyDataSetDelegate = self
     table.estimatedRowHeight = ArtisAlbumCell.height
     table.rowHeight = UITableViewAutomaticDimension
     table.register(UINib(nibName: ArtisAlbumCell.identifier, bundle: nil), forCellReuseIdentifier: ArtisAlbumCell.identifier)
@@ -81,6 +92,14 @@ class FindLyricsViewController: UIViewController {
     table.tableHeaderView = searchController.searchBar
   }
   
+  func showAlert() {
+    let alert = UIAlertController(title: "Berhasil!", message: "Artist berhasil dimasukan kedalam wishlist", preferredStyle: UIAlertControllerStyle.alert)
+    
+    alert.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.default, handler: { _ in
+      
+    }))
+    self.present(alert, animated: true, completion: nil)
+  }
 }
 
 extension FindLyricsViewController: UITableViewDelegate {
@@ -104,7 +123,29 @@ extension FindLyricsViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: ArtisAlbumCell.identifier, for: indexPath) as! ArtisAlbumCell
+    
     cell.item = self.artistList![indexPath.row]
+    cell.listener = { [weak self] value in
+      
+      guard let artistId = value.artistId,
+        let artistName = value.artistName,
+        let ratings = value.artistRating  else {
+          return
+      }
+      
+      let myFavArtist = ArtistRealm(value: ["artistId": artistId,
+                                            "artistName": artistName,
+                                            "ratings": ratings])
+      
+      do {
+        ArtistRealmDao.shared.addWishList(artist: myFavArtist)
+        self?.showAlert()
+      } catch _ {
+        fatalError()
+      }
+      
+    }
+    
     return cell
   }
   
@@ -128,5 +169,19 @@ extension FindLyricsViewController: UISearchBarDelegate {
 extension FindLyricsViewController: UISearchResultsUpdating {
   // MARK: - UISearchResultsUpdating Delegate
   func updateSearchResults(for searchController: UISearchController) {
+  }
+}
+
+
+extension FindLyricsViewController: DZNEmptyDataSetSource {
+  
+  func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+    return NSAttributedString(string: "Hasil pencarian tidak ada.", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14)])
+  }
+}
+
+extension FindLyricsViewController: DZNEmptyDataSetDelegate {
+  func emptyDataSetShouldDisplay(_ scrollView: UIScrollView!) -> Bool {
+    return self.artistList == nil
   }
 }
