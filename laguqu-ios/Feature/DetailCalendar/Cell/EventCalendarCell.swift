@@ -11,13 +11,11 @@ import UIKit
 class EventCalendarCell: UITableViewCell {
   
   static let identifier = "EventCalendarCell"
-  static let height : CGFloat = 87
+  static let height : CGFloat = 77
   
-  @IBOutlet weak var icon: UIImageView!
   @IBOutlet weak var eventName: UILabel!
-  @IBOutlet weak var eventDate: UILabel!
   
-  var item: Artist? {
+  var item: Event? {
     didSet {
       updateContent()
     }
@@ -29,12 +27,7 @@ class EventCalendarCell: UITableViewCell {
   }
   
   private func updateContent(){
-    self.icon.image = UIImage(named: "icon_event")
-    self.eventName.text = item?.artistName
-    guard let rating = item?.artistRating else {
-      return
-    }
-    self.eventDate.text = "date: \(rating)"
+    self.eventName.text = item?.nameEvent
   }
   
   
