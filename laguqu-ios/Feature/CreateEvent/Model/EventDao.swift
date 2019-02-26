@@ -33,4 +33,9 @@ class EventDao {
     return results
   }
   
+  func getEventByDate(date: String) -> Results<Event> {
+    let results: Results<Event> = database.objects(Event.self)
+    return results.filter("dateEvent == %@", date)
+  }
+  
 }
