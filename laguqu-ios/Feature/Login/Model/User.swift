@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+struct User {
+  var id: String?
+  var email: String?
+  var name: String?
+  var accessToken: String?
+}
+
+extension User {
+  
+  static func isLoggin() -> Bool {
+    return UserDefaults.standard.string(forKey: "id") != nil
+  }
+
+}
