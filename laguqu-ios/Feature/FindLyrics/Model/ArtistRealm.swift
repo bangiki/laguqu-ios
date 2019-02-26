@@ -7,3 +7,22 @@
 //
 
 import Foundation
+import RealmSwift
+
+final class ArtistRealmList: Object {
+  @objc dynamic var artistId = 0
+  @objc dynamic var artistName = ""
+  @objc dynamic var ratings = 0
+  @objc dynamic var id = ""
+  let items = List<ArtistRealm>()
+  
+  override static func primaryKey() -> String? {
+    return "id"
+  }
+}
+
+final class ArtistRealm: Object {
+  @objc dynamic var artistId = 0
+  @objc dynamic var artistName = ""
+  @objc dynamic var ratings = 0
+}

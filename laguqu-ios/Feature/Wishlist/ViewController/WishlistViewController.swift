@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DZNEmptyDataSet
 
 class WishlistViewController: UIViewController {
   
@@ -16,70 +17,45 @@ class WishlistViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    populateData()
     registerCell()
   }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     setNavigationBarType(.title, title: "Wishlist")
+   
+    do {
+      let allArtist = ArtistRealmDao.shared.getAllArtist()
+      table.reloadData()
+    } catch _ {
+      
+    }
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
   }
   
-  private func populateData(){
-    artistList = [Artist(id: 1, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 2, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 3, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 4, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 5, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 6, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 1, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 2, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 3, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 4, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 5, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 6, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 1, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 2, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 3, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 4, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 5, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 6, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 1, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 2, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 3, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 4, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 5, name: "Secondhand Serenade", rating: 10),
-                  Artist(id: 6, name: "Secondhand Serenade", rating: 10)]
-  }
-  
   private func registerCell(){
     table.delegate = self
     table.dataSource = self
+    table.emptyDataSetSource = self
+    table.emptyDataSetDelegate = self
     table.estimatedRowHeight = ArtisAlbumCell.height
     table.rowHeight = UITableViewAutomaticDimension
-    table.register(UINib(nibName: ArtisAlbumCell.identifier, bundle: nil), forCellReuseIdentifier: ArtisAlbumCell.identifier)
+    table.register(UINib(nibName: ArtistAlbumWishlistCell.identifier, bundle: nil), forCellReuseIdentifier: ArtistAlbumWishlistCell.identifier)
     table.tableFooterView = UIView()
   }
 }
 
 
 extension WishlistViewController: UITableViewDelegate {
-  
+   
 }
 
 extension WishlistViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    
-    if let count = self.artistList?.count {
-      return count
-    }
-    
-    return 0
-    
+    return ArtistRealmDao.shared.getAllArtist().count
   }
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -87,9 +63,32 @@ extension WishlistViewController: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: ArtisAlbumCell.identifier, for: indexPath) as! ArtisAlbumCell
-    cell.item = self.artistList![indexPath.row]
+    let cell = tableView.dequeueReusableCell(withIdentifier: ArtistAlbumWishlistCell.identifier, for: indexPath) as! ArtistAlbumWishlistCell
+    cell.artist = ArtistRealmDao.shared.getAllArtist()[indexPath.row]
+    cell.typeMenu = .wishlist
     return cell
   }
   
+  func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    if editingStyle == .delete {
+      let artist = ArtistRealmDao.shared.getAllArtist()[indexPath.row]
+      ArtistRealmDao.shared.deleteWishList(artist: artist)
+      tableView.deleteRows(at: [indexPath], with: .fade)
+      tableView.reloadData()
+    }
+  }
+  
+}
+
+extension WishlistViewController: DZNEmptyDataSetSource {
+  
+  func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+    return NSAttributedString(string: "Wishlist tidak tersedia", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14)])
+  }
+}
+
+extension WishlistViewController: DZNEmptyDataSetDelegate {
+  func emptyDataSetShouldDisplay(_ scrollView: UIScrollView!) -> Bool {
+    return ArtistRealmDao.shared.getAllArtist().count == 0
+  }
 }

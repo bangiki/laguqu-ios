@@ -9,16 +9,30 @@
 import UIKit
 
 class ArtistAlbumWishlistCell: UITableViewCell {
+  
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+  @IBOutlet weak var nameArtist: UILabel!
+  @IBOutlet weak var rating: UILabel!
+  
+  static let identifier = "ArtistAlbumWishlistCell"
+  static let height : CGFloat = 85
+  
+  var typeMenu : TypeMenu?
+  
+  var listener     : ((Artist) -> Void)?
+
+  var artist: ArtistRealm? {
+    didSet {
+      updateContentArtist()
     }
+  }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+  private func updateContentArtist(){
+    self.nameArtist.text = artist?.artistName
     
+    if let ratings = artist?.ratings {
+      self.rating.text = "Rating: \(ratings)"
+    }
+  }
+  
 }
