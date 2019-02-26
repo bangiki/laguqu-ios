@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DZNEmptyDataSet
 
 class DetailCalendarViewController: UIViewController {
   
@@ -14,10 +15,32 @@ class DetailCalendarViewController: UIViewController {
   
   var artistList : [Artist]?
   
+  @IBOutlet weak var lblDateEvent: UILabel!
+  var date : String
+  
+  init(date: String) {
+    self.date = date
+    super.init(nibName: "DetailCalendarViewController", bundle: nil)
+  }
+  
+  required init?(coder aDecoder: NSCoder) {
+    self.date = ""
+    super.init(coder: aDecoder)
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    populateData()
     registerCell()
+    
+    do {
+      let events = EventDao.shared.getEventByDate(date: date)
+      print("eventtttt :\(events)")
+    } catch _ {
+      
+    }
+    
+    lblDateEvent.text = date
+    
   }
   
   override func didReceiveMemoryWarning() {
@@ -28,16 +51,13 @@ class DetailCalendarViewController: UIViewController {
     super.viewWillAppear(animated)
     setNavigationBarType(.detailTitle, title: "Detail Calendar")
   }
-  
-  private func populateData(){
-    artistList = [Artist(id: 1, name: "Event Family Gathering 2019", rating: 10),
-                  Artist(id: 1, name: "Event Family Gathering 2019, Event Family Gathering 2019, Event Family Gathering 2019, Event Family Gathering 2019,", rating: 10),
-                  Artist(id: 1, name: "Event Family Gathering 2019", rating: 10)]
-  }
+
   
   private func registerCell(){
     table.delegate = self
     table.dataSource = self
+    table.emptyDataSetSource = self
+    table.emptyDataSetDelegate = self
     table.estimatedRowHeight = ArtisAlbumCell.height
     table.rowHeight = UITableViewAutomaticDimension
     table.register(UINib(nibName: EventCalendarCell.identifier, bundle: nil), forCellReuseIdentifier: EventCalendarCell.identifier)
@@ -57,7 +77,7 @@ extension DetailCalendarViewController: UITableViewDataSource {
       return count
     }
     
-    return 0
+    return EventDao.shared.getEventByDate(date: date).count
     
   }
   
@@ -67,8 +87,21 @@ extension DetailCalendarViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: EventCalendarCell.identifier, for: indexPath) as! EventCalendarCell
-    cell.item = self.artistList![indexPath.row]
+    cell.item = EventDao.shared.getEventByDate(date: date)[indexPath.row]
     return cell
   }
   
+}
+
+extension DetailCalendarViewController: DZNEmptyDataSetSource {
+  
+  func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+    return NSAttributedString(string: "Event tidak tersedia", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14)])
+  }
+}
+
+extension DetailCalendarViewController: DZNEmptyDataSetDelegate {
+  func emptyDataSetShouldDisplay(_ scrollView: UIScrollView!) -> Bool {
+    return EventDao.shared.getEventByDate(date: date).count == 0
+  }
 }

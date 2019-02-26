@@ -9,9 +9,15 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailCalendarViewController" customModule="laguqu_ios" customModuleProvider="target">
             <connections>
+                <outlet property="lblDateEvent" destination="TjC-Q8-4MB" id="y5n-hz-5EC"/>
                 <outlet property="table" destination="qQs-6v-Gx2" id="PjM-c8-WRH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -22,18 +28,61 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qQs-6v-Gx2">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <rect key="frame" x="0.0" y="107" width="375" height="560"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nmw-yl-2wB">
+                    <rect key="frame" x="0.0" y="30" width="375" height="77"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_event" translatesAutoresizingMaskIntoConstraints="NO" id="rnR-FM-PSg">
+                            <rect key="frame" x="12" y="10" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="csf-1O-Lsg"/>
+                                <constraint firstAttribute="height" constant="44" id="wfT-F6-JcZ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLc-af-JKo">
+                            <rect key="frame" x="68" y="10" width="291" height="22.5"/>
+                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins Medium" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 February 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjC-Q8-4MB">
+                            <rect key="frame" x="68" y="36.5" width="184.5" height="28.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="uMP-FQ-STe" firstAttribute="bottom" secondItem="TjC-Q8-4MB" secondAttribute="bottom" constant="12" id="4pn-eZ-h8Z"/>
+                        <constraint firstItem="qLc-af-JKo" firstAttribute="top" secondItem="uMP-FQ-STe" secondAttribute="top" constant="10" id="8fy-4a-daS"/>
+                        <constraint firstItem="qLc-af-JKo" firstAttribute="leading" secondItem="rnR-FM-PSg" secondAttribute="trailing" constant="12" id="IM5-t3-Ysi"/>
+                        <constraint firstItem="TjC-Q8-4MB" firstAttribute="top" secondItem="qLc-af-JKo" secondAttribute="bottom" constant="4" id="LXp-Cx-gY1"/>
+                        <constraint firstItem="rnR-FM-PSg" firstAttribute="top" secondItem="nmw-yl-2wB" secondAttribute="top" constant="10" id="OCH-KD-roy"/>
+                        <constraint firstItem="rnR-FM-PSg" firstAttribute="leading" secondItem="nmw-yl-2wB" secondAttribute="leading" constant="12" id="TuF-67-EYM"/>
+                        <constraint firstItem="TjC-Q8-4MB" firstAttribute="leading" secondItem="rnR-FM-PSg" secondAttribute="trailing" constant="12" id="jhg-iU-0gY"/>
+                        <constraint firstAttribute="trailing" secondItem="qLc-af-JKo" secondAttribute="trailing" constant="16" id="r8d-Ah-bDC"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="uMP-FQ-STe"/>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="qQs-6v-Gx2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9qq-ZA-qDy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nmw-yl-2wB" secondAttribute="trailing" id="CIK-jd-RKy"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="qQs-6v-Gx2" secondAttribute="bottom" id="EEn-a7-wLQ"/>
+                <constraint firstItem="nmw-yl-2wB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="G2F-ZT-KmX"/>
                 <constraint firstItem="qQs-6v-Gx2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Uih-u8-tQ7"/>
+                <constraint firstItem="nmw-yl-2wB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aTC-hF-Csa"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qQs-6v-Gx2" secondAttribute="trailing" id="jnL-f9-F35"/>
+                <constraint firstItem="qQs-6v-Gx2" firstAttribute="top" secondItem="nmw-yl-2wB" secondAttribute="bottom" id="sFt-mh-z0X"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="icon_event" width="30" height="30"/>
+    </resources>
 </document>
