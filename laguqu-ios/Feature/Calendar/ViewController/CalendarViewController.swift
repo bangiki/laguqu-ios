@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import RealmSwift
 
 class CalendarViewController: UIViewController {
   
@@ -36,6 +36,13 @@ class CalendarViewController: UIViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     setNavigationBarType(.title, title: "Calendar")
+    
+    do {
+      let events = EventDao.shared.getAllEvent()
+      print("eventtttt :\(events)")
+    } catch _ {
+      
+    }
   }
   
   let defaultCalendar: Calendar = {
@@ -49,7 +56,7 @@ class CalendarViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
     let calendar = VACalendar(calendar: defaultCalendar)
     calendarView = VACalendarView(frame: .zero, calendar: calendar)
     calendarView.showDaysOut = true
@@ -160,7 +167,8 @@ extension CalendarViewController: VADayViewAppearanceDelegate {
 
 extension CalendarViewController: VACalendarViewDelegate {
   func selectedDate(_ date: Date) {
-    let nav = DetailCalendarViewController()
+    let tanggal = date.toString(withFormat: "dd-MM-yyyy")
+    let nav = DetailCalendarViewController(date: tanggal)
     navigationController?.pushViewController(nav, animated: true)
   }
 }
