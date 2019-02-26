@@ -24,8 +24,13 @@ class SplashScreenViewController: UIViewController {
   }
   
   func nextScreen() {
-    let nav = LoginViewController()
-    navigationController?.pushViewController(nav, animated: true)
+    if User.isLoggin() {
+      let nav = HomeTabBarViewController()
+      navigationController?.pushViewController(nav, animated: true)
+    }else {
+      let nav = LoginViewController()
+      navigationController?.pushViewController(nav, animated: true)
+    }
   }
   
 }
