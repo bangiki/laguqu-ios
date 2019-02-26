@@ -44,8 +44,6 @@ class LoginViewController: UIViewController {
   }
   
   @IBAction func tapToLoginWithFacebook(_ sender: UIButton) {
-    //let home = HomeTabBarViewController()
-    //navigationController?.pushViewController(home, animated: true)
     self.facebook.login(from: self)
   }
   
