@@ -22,6 +22,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogoutViewController" customModule="laguqu_ios" customModuleProvider="target">
             <connections>
                 <outlet property="btnLogout" destination="EtJ-FZ-6Qc" id="FjO-Lo-Ndj"/>
+                <outlet property="lblEmail" destination="Q9i-B0-5E4" id="HKS-o3-czI"/>
+                <outlet property="lblName" destination="RZn-jS-Fo9" id="6nw-Ef-V6w"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -31,29 +33,29 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lw6-lV-eYi">
-                    <rect key="frame" x="0.0" y="20" width="375" height="170"/>
+                    <rect key="frame" x="0.0" y="40" width="375" height="184"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rizki Ramdani" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZn-jS-Fo9">
-                            <rect key="frame" x="111" y="24" width="122" height="26"/>
-                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZn-jS-Fo9">
+                            <rect key="frame" x="91" y="20" width="10" height="28"/>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g8m-BH-Ukq">
-                            <rect key="frame" x="16" y="16" width="72" height="72"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_avatar" translatesAutoresizingMaskIntoConstraints="NO" id="g8m-BH-Ukq">
+                            <rect key="frame" x="16" y="16" width="52" height="52"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="72" id="AEf-pN-jsg"/>
-                                <constraint firstAttribute="height" constant="72" id="zYo-lN-XUj"/>
+                                <constraint firstAttribute="width" constant="52" id="AEf-pN-jsg"/>
+                                <constraint firstAttribute="height" constant="52" id="zYo-lN-XUj"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ramdani.rizki19@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9i-B0-5E4">
-                            <rect key="frame" x="111" y="50" width="132" height="12"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9i-B0-5E4">
+                            <rect key="frame" x="91" y="48" width="6" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtJ-FZ-6Qc">
-                            <rect key="frame" x="16" y="104" width="343" height="50"/>
+                            <rect key="frame" x="16" y="118" width="343" height="50"/>
                             <color key="backgroundColor" name="nav_primary"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="4lj-Wk-4gK"/>
@@ -69,12 +71,12 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="RZn-jS-Fo9" firstAttribute="top" secondItem="lw6-lV-eYi" secondAttribute="top" constant="24" id="39f-oC-OJz"/>
+                        <constraint firstItem="RZn-jS-Fo9" firstAttribute="top" secondItem="lw6-lV-eYi" secondAttribute="top" constant="20" id="39f-oC-OJz"/>
                         <constraint firstItem="EtJ-FZ-6Qc" firstAttribute="leading" secondItem="lw6-lV-eYi" secondAttribute="leading" constant="16" id="7hj-lL-tFI"/>
                         <constraint firstItem="RZn-jS-Fo9" firstAttribute="leading" secondItem="g8m-BH-Ukq" secondAttribute="trailing" constant="23" id="HfL-LH-15v"/>
                         <constraint firstAttribute="bottom" secondItem="EtJ-FZ-6Qc" secondAttribute="bottom" constant="16" id="Rcf-6t-bR6"/>
                         <constraint firstItem="Q9i-B0-5E4" firstAttribute="top" secondItem="RZn-jS-Fo9" secondAttribute="bottom" id="S3Y-0J-71L"/>
-                        <constraint firstItem="EtJ-FZ-6Qc" firstAttribute="top" secondItem="g8m-BH-Ukq" secondAttribute="bottom" constant="16" id="VEK-yR-wYN"/>
+                        <constraint firstItem="EtJ-FZ-6Qc" firstAttribute="top" secondItem="g8m-BH-Ukq" secondAttribute="bottom" constant="50" id="VEK-yR-wYN"/>
                         <constraint firstItem="g8m-BH-Ukq" firstAttribute="top" secondItem="lw6-lV-eYi" secondAttribute="top" constant="16" id="edJ-l4-bn9"/>
                         <constraint firstItem="g8m-BH-Ukq" firstAttribute="leading" secondItem="lw6-lV-eYi" secondAttribute="leading" constant="16" id="hbc-69-a1J"/>
                         <constraint firstAttribute="trailing" secondItem="EtJ-FZ-6Qc" secondAttribute="trailing" constant="16" id="kM9-q4-WUL"/>
@@ -85,7 +87,7 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="lw6-lV-eYi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4aj-hr-hm3"/>
-                <constraint firstItem="lw6-lV-eYi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="DEd-bE-GeS"/>
+                <constraint firstItem="lw6-lV-eYi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="DEd-bE-GeS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lw6-lV-eYi" secondAttribute="trailing" id="JEz-rc-sTy"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -93,6 +95,7 @@
         </view>
     </objects>
     <resources>
+        <image name="icon_avatar" width="128" height="128"/>
         <namedColor name="nav_primary">
             <color red="0.91764705879999997" green="0.18039215689999999" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
